@@ -29,17 +29,24 @@
       </ul> 
   </div>
      <section id="about-us">
-        	<h2><br>About Us</h2>
+        	<h2>About Us</h2>
           <p><div><br>Our cinema has reopened after extensive improvements and renovations!</div></p>
           <div><br>There are new seats and reclinable first class seats!</div>
-          <div><br>The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div>
-    <div><img src='../../media/538.jpg' alt='New Seats' width=33%/>
-    <img src='../../media/Verona-Twin.png' alt='First Class Seats' width=33%/></div>
+          <div><br>The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
+  <div class="row">
+    <img src="../../media/538.jpg" alt='New Seats' style="width:200px">
+    <p>538 Seats</p>
+  </div>
+  <div class="row">
+    <img src="../../media/verona-twin.jpg" alt='First Class Seats' style="width:200px">
+    <p>Twin Seats</p>
+  </div>
+</div>
         </section>
 
       <section id="price">
       <h2>Price</h2>
-      <p>The Cinema offers discounted pricing xxxxx</p>
+      <p><br>The Cinema offers discounted pricing xxxxx</p><br>
       <table id="table-price">
   <tr>
     <th>Seat Type</th>
@@ -86,9 +93,9 @@
 </table>
         </section>
 
-<article id='now-showing'>
-<h1 class=non-showing>Now Showing</h1>
-<p class=non-showing>Below are the movies that we are now showing:-</p>
+<!--article--><section id='now-showing'>
+<h1 class=non-showing>Now Showing</h1><br>
+<p class=non-showing>Below are the movies that we are now showing:-</p><br>
 <div class="row">
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/starwars.jpg' alt='Star Wars' width=90%/></p>
@@ -128,16 +135,17 @@
     <p>Sat - Sun - 9pm</p>
   </div>
 </div>
+</section>
 
 <section id='trailer'>
-  <h1>Trailer</h1>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  <h1>Trailer</h1><br>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br><br><br>
 </section>
 
 </body>
 </html>
 
-      </article>
+      <!--</article>-->
 
 
     <footer>

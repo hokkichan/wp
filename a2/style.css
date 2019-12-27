@@ -3,7 +3,6 @@
   font-family: Arial, "Helvetica Neue", Helvetica;
   margin-bottom: 0px;
   margin-top: 0px;
-  background-color: green;
 }
 
 img.title {
@@ -52,16 +51,33 @@ li a:hover {
   background-color: #111;
 }
 
-
-#price {
- background-color: blue;
- color: black;
-}
-
 #about-us {
 	background-image: url("../../media/about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  padding-top: 45px;
+}
+
+#price {
+ background-image: url("../../media/price.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: white;
+ padding-top: 45px;
+ padding-bottom: 180px;
+}
+
+#now-showing {
+  padding-top: 45px;
+}
+
+#trailer {
+  background-image: url("../../media/trailer.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+  padding-top: 45px;
+  padding-bottom: 160px;
   color: white;
 }
 
