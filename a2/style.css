@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: Arial, "Helvetica Neue", Helvetica;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: green;
 }
 
 img.title {
@@ -9,8 +12,14 @@ img.title {
   margin: 0 auto;
 }
 
+#navbar {
+  top: 0px;
+  bottom: 0px;
+  position: sticky;
+}
+
 li {
-  color: red;
+  color: blue;
 }
 
 header {
@@ -23,6 +32,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: darkorange;
+  position: sticky;
 }
 
 li {
@@ -33,6 +43,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
+  font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -40,9 +51,7 @@ li a {
 li a:hover {
   background-color: #111;
 }
-</style>
-</head>
-<body>
+
 
 #price {
  background-color: blue;
@@ -50,7 +59,10 @@ li a:hover {
 }
 
 #about-us {
-	background-color: green;
+	background-image: url("../../media/about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 table {
@@ -62,6 +74,10 @@ th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+}
+
+#now-showing {
+  background-color: orange;
 }
 
 
