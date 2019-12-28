@@ -129,13 +129,6 @@ div.desc {
   text-align: center;
 }
 
-#gallery {
-  flex: 40%;
-  padding: 25px;
-  color: green;
-  clear: both;
-}
-
 #price {
  background-image: url("../../media/price.jpg");
  background-size: cover;
@@ -194,6 +187,36 @@ th, td {
   height: 460px; 
 }
 
+.columnn {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  padding-bottom: 25px;
+  overflow: auto;
+}
+
+.columnw {
+  float: left;
+  width: 70%;
+  padding: 5px;
+  padding-bottom: 25px;
+  overflow: auto;
+}
+
+/*.container {
+  position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
 
 .row:after {
   content: "";

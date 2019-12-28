@@ -51,9 +51,10 @@
 
 <div class="gallery2">
   <a target="_blank" href="../../media/dolby.jpg">
-    <img src="../../media/dolby.jpg" alt="3D Dolby Vision Projection with<br>Dolby Atmos Sound" width="100%">
+    <img src="../../media/dolby.jpg" alt="3D Dolby Vision Projection with Dolby Atmos Sound" width="100%">
+    <!--Image sourced from www.dolby.com for fair use and educational purpose-->
   </a>
-  <div class="desc">3D Dolby Vision Projection and Dolby Atmos Sound</div>
+  <div class="desc"><br>3D Dolby Vision Projection with<br><br>Dolby Atmos Sound!</div>
 </div>
 </div>
 
@@ -61,7 +62,7 @@
 
       <section id="price">
       <h2>Price</h2>
-      <p><br>The Cinema offers discounted pricing weekday afternoons at 12pm (ie weekday martineé sessions, Mon - Fri_ and all day on Mon and Tue.</p><br>
+      <p><br>The Cinema offers discounted pricing weekday afternoons at 12pm (ie weekday martineé sessions, Mon - Fri and all day on Mon and Tue.</p><br>
       <table id="table-price">
   <tr>
     <th>Seat Type</th>
@@ -171,7 +172,25 @@
 
 <section id='trailer'>
   <h1>Trailer</h1><br>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><br><br><br>
+
+<div class="row">
+
+  <div class="columnn date">
+    <h2>Star Wars:</h2>
+    <h2>The Rise of Skywalker</h2>
+    <p>Mon - 12pm</p>
+    <p>Tue - 12pm</p>
+    <p>Wed - 6pm</p>
+    <p>Thu - 6pm</p>
+    <p>Fri - 6pm</p>
+    <p>Sat - 12pm</p>
+    <p>Sun - 12pm</p>
+  </div>
+    <div class="columnw">
+    <iframe width="560px" height="315px"src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+  </div>
+  </div>
+</div>
 </section>
 
 </body>
