@@ -33,16 +33,22 @@
           <p><div><br>Our cinema has reopened after extensive improvements and renovations!</div></p>
           <div><br>There are new seats and reclinable first class seats!</div>
           <div><br>The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
-  <div class="row">
-    <img src="../../media/538.jpg" alt='New Seats' style="width:200px">
-    <p>538 Seats</p>
-  </div>
-  <div class="row">
-    <img src="../../media/verona-twin.jpg" alt='First Class Seats' style="width:200px">
-    <p>Twin Seats</p>
-  </div>
+<div class ="new-seats">
+<div class="gallery">
+  <a target="_blank" href="../../media/538.jpg">
+    <img src="../../media/538.jpg" alt="New Seats" width="300px">
+  </a>
+  <div class="desc">Comfortable New Seats!</div>
 </div>
-        </section>
+
+<div class="gallery">
+  <a target="_blank" href="../../media/verona-twin.jpg">
+    <img src="../../media/verona-twin.jpg" alt="First Class Seats" width="300px">
+  </a>
+  <div class="desc">Most Deluxe First Class Seats!</div>
+</div>
+</div>
+</section><br>
 
       <section id="price">
       <h2>Price</h2>
@@ -100,11 +106,15 @@
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/starwars.jpg' alt='Star Wars' width=90%/></p>
   </div>
-  <div class="column" style="background-color:#FF5500;">
+  <div class="column date" style="background-color:#FF5500;">
     <h2>Star Wars: The Rise of Skywalker</h2>
-    <p>Mon - Tue - 12pm</p>
-    <p>Wed - Fri - 6pm</p>
-  	<p>Sat - Sun - 12pm</p>
+    <p>Mon - 12pm</p>
+    <p>Tue - 12pm</p>
+    <p>Wed - 6pm</p>
+    <p>Thu - 6pm</p>
+    <p>Fri - 6pm</p>
+  	<p>Sat - 12pm</p>
+    <p>Sun - 12pm</p>
   </div>
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>

@@ -5,10 +5,37 @@
   margin-top: 0px;
 }
 
+/*code of parallax background adapted from w3schools.com*/
+#about-us, #price, #trailer {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#about-us {
+  background-image: url("../../media/about.jpg");
+  min-height: 100%;
+}
+
+#price {
+  background-image: url("../../media/price.jpg");
+  min-height: 400px;
+}
+
+#trailer {
+  background-image: url("../../media/trailer.jpg");
+  min-height: 400px;
+}
+
 img.title {
-	background-color: white;
 	display: block;
   margin: 0 auto;
+}
+
+header {
+  background-color: black;
 }
 
 #navbar {
@@ -19,10 +46,6 @@ img.title {
 
 li {
   color: blue;
-}
-
-header {
-	background-color: black;
 }
 
 ul {
@@ -57,6 +80,44 @@ li a:hover {
   background-repeat: no-repeat;
   color: white;
   padding-top: 45px;
+  padding-bottom: 25px;
+  overflow: auto;
+}
+
+/*code of image gallery adapted from w3schools.com*/
+
+#new-seats {
+  float: left;
+  width: 40%;
+  padding: 5px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#gallery {
+  flex: 40%;
+  padding: 25px;
+  color: green;
+  clear: both;
 }
 
 #price {
@@ -64,12 +125,13 @@ li a:hover {
  background-size: cover;
  background-repeat: no-repeat;
  color: white;
- padding-top: 45px;
- padding-bottom: 180px;
+ padding-top: 25px;
+  padding-bottom: 25px;
+  overflow: auto;
 }
 
 #now-showing {
-  padding-top: 45px;
+  padding-top: 25px;
 }
 
 #trailer {
@@ -96,29 +158,31 @@ th, td {
   background-color: orange;
 }
 
+.date {
+  color: pink;
+  margin-bottom-bottom: 12px;
+}
 
 .poster {
 	display: flex;
 	justify-content: center;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Code for responsive and column model adapted from w3schools.com */
 .column {
   float: left;
   width: 25%;
   padding: 5px;
-  height: 460px; /* Should be removed. Only for demonstration */
+  height: 460px; 
 }
 
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 50%;
