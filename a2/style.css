@@ -3,6 +3,8 @@
   font-family: Arial, "Helvetica Neue", Helvetica;
   margin-bottom: 0px;
   margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /*code of parallax background adapted from w3schools.com*/
@@ -74,7 +76,7 @@ li a:hover {
   background-color: #111;
 }
 
-.dropdown {
+/*.dropdown {
   position: relative;
   display: inline-block;
 }
@@ -91,7 +93,7 @@ li a:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+}*/
 
 #about-us {
 	background-image: url("../../media/about.jpg");
@@ -160,27 +162,24 @@ div.desc {
 
 #now-showing {
   padding-top: 45px;
+  background-color: orange;
 }
 
-h1.non-showing, p.non-showing {
+h1.now-showing, p.now-showing {
   padding-left: 15px;
 }
 
+
 #synopsis {
   background-image: url("../../media/trailer.jpg");
- background-size: cover;
- background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 45px;
-  padding-bottom: 160px;
+  padding-bottom: 25px;
+  padding-left: 15px;
   color: white;
   overflow: auto;
 }
-
-h3.synopsis, h4.synopsis, p.synopsis {
-  padding-left: -20px;
-}
-
-
 
 table {
   border-collapse: collapse;
@@ -193,9 +192,6 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 
-#now-showing {
-  background-color: orange;
-}
 
 .date {
   color: black;
@@ -220,7 +216,7 @@ th, td {
 .columnn {
   float: left;
   width: 30%;
-  padding: 5px;
+  padding: 5px 5px 5px 0px;
   padding-bottom: 25px;
   overflow: auto;
 }
@@ -233,20 +229,6 @@ th, td {
   overflow: auto;
 }
 
-/*.container {
-  position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/
 
 .row:after {
   content: "";
@@ -261,7 +243,9 @@ th, td {
 }
 
 #booking {
-  background-color: orange;
+  background-image: url("../../media/booking.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   padding-top: 45px;
   padding-bottom: 45px;

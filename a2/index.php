@@ -16,11 +16,10 @@
   </head>
 
   <body>
-
     <header>
       <div><img class = "title" src="../../media/logow.png" alt="Lunardo" height=200px /></div>
- </header>
- <div id="navbar">
+    </header>
+    <div id="navbar">
  	    <ul>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#price">Price</a></li>
@@ -28,38 +27,34 @@
           <ul class="dropdown-content"><a href="#synopsis">Synopsis</a></ul>
           <ul class="dropdown-content"><a href="#booking">Booking</a></ul></li>
       </ul> 
-  </div>
-     <section id="about-us">
-        	<h2>About Us</h2>
-          <p><div><br>--- Our cinema has reopened after extensive improvements and renovations!</div></p>
-          <div><br>------ There are new seats and reclinable first class seats!</div>
-          <div><br>--------- The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
-<div class ="new-seats">
-<div class="gallery">
-  <a target="_blank" href="../../media/538.jpg">
-    <img src="../../media/538.jpg" alt="New Seats" width="100%">
-  </a>
-  <div class="desc">Comfortable New Seats!</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="../../media/verona-twin.jpg">
-    <img src="../../media/verona-twin.jpg" alt="First Class Seats" width="100%">
-  </a>
-  <div class="desc">Most Deluxe First Class Seats!</div>
-</div>
-</div>
-
-<div class="gallery2">
-  <a target="_blank" href="../../media/dolby.jpg">
-    <img src="../../media/dolby.jpg" alt="3D Dolby Vision Projection with Dolby Atmos Sound" width="100%">
+    </div>
+    <section id="about-us">
+      <h2>About Us</h2>
+        <p><div><br>--- Our cinema has reopened after extensive improvements and renovations!</div></p>
+        <div><br>------ There are new seats and reclinable first class seats!</div>
+        <div><br>--------- The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
+      <div class ="new-seats">
+        <div class="gallery">
+          <a target="_blank" href="../../media/538.jpg">
+          <img src="../../media/538.jpg" alt="New Seats" width="100%">
+          </a>
+          <div class="desc">Comfortable New Seats!</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="../../media/verona-twin.jpg">
+          <img src="../../media/verona-twin.jpg" alt="First Class Seats" width="100%">
+          </a>
+        <div class="desc">Most Deluxe First Class Seats!</div>
+        </div>
+      </div>
+      <div class="gallery2">
+          <a target="_blank" href="../../media/dolby.jpg">
+          <img src="../../media/dolby.jpg" alt="3D Dolby Vision Projection with Dolby Atmos Sound" width="100%">
     <!--Image sourced from www.dolby.com for fair use and educational purpose-->
-  </a>
-  <div class="desc"><br>3D Dolby Vision Projection with<br><br>Dolby Atmos Sound!</div>
-</div>
-</div>
-
-</section><br>
+          </a>
+        <div class="desc"><br>3D Dolby Vision Projection with<br><br>Dolby Atmos Sound!</div>
+      </div>
+    </section>
 
       <section id="price">
       <h2>Price</h2>
@@ -111,8 +106,8 @@
         </section>
 
 <!--article--><section id='now-showing'>
-<h1 class=non-showing>Now Showing</h1><br>
-<p class=non-showing>Below are the movies that we are now showing:-</p><br>
+<h1 class=now-showing padding-left="15px">Now Showing</h1><br>
+<p class=now-showing padding-left="15px">Below are the movies that we are now showing:-</p><br>
 <div class="row">
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/starwars.jpg' alt='Star Wars' width=90%/></p>
@@ -189,7 +184,7 @@
     <div class="columnw">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div>Available Mon-Tue: 12pm | Wed-Fri: 6pm | Sat-Sum: 12pm </div>
+  <div>Available: Mon-Tue: 12pm | Wed-Fri: 6pm | Sat-Sum: 12pm </div>
   </div>
 </div>
 </section>
