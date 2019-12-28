@@ -8,7 +8,7 @@
 }
 
 /*code of parallax background adapted from w3schools.com*/
-#about-us, #price, #trailer {
+#about-us, #price, #synopsis, #booking {
   position: relative;
   background-attachment: fixed;
   background-position: center;

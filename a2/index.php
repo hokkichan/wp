@@ -106,8 +106,8 @@
         </section>
 
 <!--article--><section id='now-showing'>
-<h1 class=now-showing padding-left="15px">Now Showing</h1><br>
-<p class=now-showing padding-left="15px">Below are the movies that we are now showing:-</p><br>
+<h1 class=now-showing>Now Showing</h1><br>
+<p class=now-showing>Below are the movies that we are now showing:-</p><br>
 <div class="row">
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/starwars.jpg' alt='Star Wars' width=90%/></p>
@@ -168,18 +168,15 @@
 
 <section id='synopsis'>
   <h1>Synopsis</h1><br>
-
 <div class="row">
-
   <div class="columnn">
     <h3>Star Wars: The Rise of Skywalker</h3>
     <!--Description copied from https://www.imdb.com/title/tt2527338/ -->
     <h4><br>Plot description:<br></h4>
     <p><br>After Palpatine mysteriously returns, the Resistance faces the First Order once more in the final chapter of the Skywalker saga.<br></p>
     <p><br>Director: J.J. Abrams<br></p>
-    <p><br>Writers: Chris Terrio | J.J. Abrams<br></p>
+    <p ><br>Writers: Chris Terrio | J.J. Abrams<br></p>
     <p><br>Stars: Carrie Fisher | Mark Hamill | Adam Driver<br></p>
-
   </div>
     <div class="columnw">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -204,7 +201,7 @@
 
     <footer>
       <p>This website has been created as an assignment of the course of "Web Programming" by the RMIT University. The site contains copyrighted materials not created by the author, and has been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).</p>
-      <p>&copy; Lunardo Cinema
+      <p><br>&copy; Lunardo Cinema
       <script>
         document.write(new Date().getFullYear());
       </script>. | Tel: +61 3 9925 5110 | Email: info@lunardo.com</p>
