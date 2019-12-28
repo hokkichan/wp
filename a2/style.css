@@ -93,10 +93,22 @@ li a:hover {
 }
 
 div.gallery {
+  padding-top:20px;
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 300px;
+  width: 30%;
+  height:320px;
+  text-align: center;
+}
+
+div.gallery2 {
+  padding-top:50px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 30%;
+  height:320px;
   text-align: center;
 }
 
@@ -105,7 +117,11 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 300px;
+  width: 80%;
+}
+
+div.gallery2 img {
+  width: 100%;
 }
 
 div.desc {
@@ -159,8 +175,10 @@ th, td {
 }
 
 .date {
-  color: pink;
-  margin-bottom-bottom: 12px;
+  color: black;
+  line-height: 250%;
+  size: 150%;
+  text-align: center;
 }
 
 .poster {
@@ -187,4 +205,12 @@ th, td {
   .column {
     width: 50%;
   }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 150%;
 }

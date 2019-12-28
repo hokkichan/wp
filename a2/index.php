@@ -36,23 +36,32 @@
 <div class ="new-seats">
 <div class="gallery">
   <a target="_blank" href="../../media/538.jpg">
-    <img src="../../media/538.jpg" alt="New Seats" width="300px">
+    <img src="../../media/538.jpg" alt="New Seats" width="100%">
   </a>
   <div class="desc">Comfortable New Seats!</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="../../media/verona-twin.jpg">
-    <img src="../../media/verona-twin.jpg" alt="First Class Seats" width="300px">
+    <img src="../../media/verona-twin.jpg" alt="First Class Seats" width="100%">
   </a>
   <div class="desc">Most Deluxe First Class Seats!</div>
 </div>
 </div>
+
+<div class="gallery2">
+  <a target="_blank" href="../../media/dolby.jpg">
+    <img src="../../media/dolby.jpg" alt="3D Dolby Vision Projection with<br>Dolby Atmos Sound" width="100%">
+  </a>
+  <div class="desc">3D Dolby Vision Projection and Dolby Atmos Sound</div>
+</div>
+</div>
+
 </section><br>
 
       <section id="price">
       <h2>Price</h2>
-      <p><br>The Cinema offers discounted pricing xxxxx</p><br>
+      <p><br>The Cinema offers discounted pricing weekday afternoons at 12pm (ie weekday martineé sessions, Mon - Fri_ and all day on Mon and Tue.</p><br>
       <table id="table-price">
   <tr>
     <th>Seat Type</th>
@@ -107,7 +116,8 @@
     <p class="poster"><img src='../../media/starwars.jpg' alt='Star Wars' width=90%/></p>
   </div>
   <div class="column date" style="background-color:#FF5500;">
-    <h2>Star Wars: The Rise of Skywalker</h2>
+    <h2>Star Wars:</h2>
+    <h2>The Rise of Skywalker</h2>
     <p>Mon - 12pm</p>
     <p>Tue - 12pm</p>
     <p>Wed - 6pm</p>
@@ -119,30 +129,42 @@
   <div class="column" style="background-color:#FF4400;">
     <p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>
   </div>
-  <div class="column" style="background-color:#FF5500;">
+  <div class="column date" style="background-color:#FF5500;">
     <h2>Frozen 2</h2>
-    <p>Mon - Tue - Nil</p>
-    <p>Wed - Fri - 9pm</p>
-    <p>Sat - Sun - 6pm</p>
+    <p>Mon - Nil</p>
+    <p>Tue - Nil</p>
+    <p>Wed - 9pm</p>
+    <p>Thu - 9pm</p>
+    <p>Fri - 9pm</p>
+    <p>Sat - 6pm</p>
+    <p>Sun - 6pm</p>
   </div>
   <div></div>
   <div class="column" style="background-color:#FF5500;">
     <p class="poster"><img src='../../media/aeronauts.jpg' alt='The Aeronauts' width=90%/></p>
   </div>
-  <div class="column" style="background-color:#FF4400;">
+  <div class="column date" style="background-color:#FF4400;">
     <h2>The Aeronauts</h2>
-    <p>Mon - Tue - 6pm</p>
-    <p>Wed - Fri - Nil</p>
-    <p>Sat - Sun - 3pm</p>
+    <p>Mon - 6pm</p>
+    <p>Tue - 6pm</p>
+    <p>Wed - Nil</p>
+    <p>Thu - Nil</p>
+    <p>Fri - Nil</p>
+    <p>Sat - 3pm</p>
+    <p>Sun - 3pm</p>
   </div>
 <div class="column" style="background-color:#FF5500;">
     <p class="poster"><img src='../../media/jojo.jpg' alt='Jojo Rabbit' width=90%/></p>
   </div>
-  <div class="column" style="background-color:#FF4400;">
+  <div class="column date" style="background-color:#FF4400;">
     <h2>Jojo Rabbit</h2>
-    <p>Mon - Tue - Nil</p>
-    <p>Wed - Fri - 12pm</p>
-    <p>Sat - Sun - 9pm</p>
+    <p>Mon - Nil</p>
+    <p>Tue - Nil</p>
+    <p>Wed - 12pm</p>
+    <p>Thu - 12pm</p>
+    <p>Fri - 12pm</p>
+    <p>Sat - 9pm</p>
+    <p>Sun - 9pm</p>
   </div>
 </div>
 </section>
