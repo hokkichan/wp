@@ -17,16 +17,19 @@
 #about-us {
   background-image: url("../../media/about.jpg");
   min-height: 100%;
+  padding-left: 15px;
 }
 
 #price {
   background-image: url("../../media/price.jpg");
   min-height: 400px;
+  padding-left: 15px;
 }
 
 #trailer {
   background-image: url("../../media/trailer.jpg");
   min-height: 400px;
+  padding-left: 15px;
 }
 
 img.title {
@@ -42,10 +45,7 @@ header {
   top: 0px;
   bottom: 0px;
   position: sticky;
-}
-
-li {
-  color: blue;
+  z-index: 1;
 }
 
 ul {
@@ -72,6 +72,25 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 #about-us {
@@ -134,23 +153,34 @@ div.desc {
  background-size: cover;
  background-repeat: no-repeat;
  color: white;
- padding-top: 25px;
+ padding-top: 45px;
   padding-bottom: 25px;
   overflow: auto;
 }
 
 #now-showing {
-  padding-top: 25px;
+  padding-top: 45px;
 }
 
-#trailer {
+h1.non-showing, p.non-showing {
+  padding-left: 15px;
+}
+
+#synopsis {
   background-image: url("../../media/trailer.jpg");
  background-size: cover;
  background-repeat: no-repeat;
   padding-top: 45px;
   padding-bottom: 160px;
   color: white;
+  overflow: auto;
 }
+
+h3.synopsis, h4.synopsis, p.synopsis {
+  padding-left: -20px;
+}
+
+
 
 table {
   border-collapse: collapse;
@@ -230,10 +260,26 @@ th, td {
   }
 }
 
+#booking {
+  background-color: orange;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 15px;
+  line-height: 150%;
+}
+
 footer {
   background-color: black;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 15px;
   line-height: 150%;
+}
+
+button {
+  color: black;
+  background-color: gold;
+  border-radius: 5px;
 }

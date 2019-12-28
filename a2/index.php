@@ -7,12 +7,12 @@
     <title>Lunardo Cinema</title>
 
     <!-- Stylesheets, you can have more than one. -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css"/>
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
     <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
     
     <!-- Javascript, you can have more than one. -->
-    <!--<script src='wireframe.js'></script>-->
+    <script src='wireframe.js'></script>
   </head>
 
   <body>
@@ -24,15 +24,16 @@
  	    <ul>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#price">Price</a></li>
-        <li><a href="#now-showing">Now Showing</a></li>
-        <li><a href="#trailer">Trailer</a></li>
+        <li class="dropdown"><a href="#now-showing">Now Showing</a>
+          <ul class="dropdown-content"><a href="#synopsis">Synopsis</a></ul>
+          <ul class="dropdown-content"><a href="#booking">Booking</a></ul></li>
       </ul> 
   </div>
      <section id="about-us">
         	<h2>About Us</h2>
-          <p><div><br>Our cinema has reopened after extensive improvements and renovations!</div></p>
-          <div><br>There are new seats and reclinable first class seats!</div>
-          <div><br>The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
+          <p><div><br>--- Our cinema has reopened after extensive improvements and renovations!</div></p>
+          <div><br>------ There are new seats and reclinable first class seats!</div>
+          <div><br>--------- The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound! Click <a href="https://www.dolby.com/us/en/cinema">here</a> for more information.</div><br>
 <div class ="new-seats">
 <div class="gallery">
   <a target="_blank" href="../../media/538.jpg">
@@ -170,25 +171,32 @@
 </div>
 </section>
 
-<section id='trailer'>
-  <h1>Trailer</h1><br>
+<section id='synopsis'>
+  <h1>Synopsis</h1><br>
 
 <div class="row">
 
-  <div class="columnn date">
-    <h2>Star Wars:</h2>
-    <h2>The Rise of Skywalker</h2>
-    <p>Mon - 12pm</p>
-    <p>Tue - 12pm</p>
-    <p>Wed - 6pm</p>
-    <p>Thu - 6pm</p>
-    <p>Fri - 6pm</p>
-    <p>Sat - 12pm</p>
-    <p>Sun - 12pm</p>
+  <div class="columnn">
+    <h3>Star Wars: The Rise of Skywalker</h3>
+    <!--Description copied from https://www.imdb.com/title/tt2527338/ -->
+    <h4><br>Plot description:<br></h4>
+    <p><br>After Palpatine mysteriously returns, the Resistance faces the First Order once more in the final chapter of the Skywalker saga.<br></p>
+    <p><br>Director: J.J. Abrams<br></p>
+    <p><br>Writers: Chris Terrio | J.J. Abrams<br></p>
+    <p><br>Stars: Carrie Fisher | Mark Hamill | Adam Driver<br></p>
+
   </div>
     <div class="columnw">
-    <iframe width="560px" height="315px"src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  <div>Available Mon-Tue: 12pm | Wed-Fri: 6pm | Sat-Sum: 12pm </div>
+  </div>
+</div>
+</section>
+
+<section id='booking'>
+  <h1>Booking Area</h1><br>
+  <div>Under Construction</div>
   </div>
 </div>
 </section>
@@ -200,11 +208,12 @@
 
 
     <footer>
+      <p>This website has been created as an assignment of the course of "Web Programming" by the RMIT University. The site contains copyrighted materials not created by the author, and has been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).</p>
       <p>&copy; Lunardo Cinema
       <script>
         document.write(new Date().getFullYear());
-      </script>. Tel: +61 3 9925 5110 Email: info@lunardo.com</p>
-      <p>Chan Hok Ki | s3831921 | Github: <a href="https://github.com/s3831921">s3831921</a><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+      </script>. | Tel: +61 3 9925 5110 | Email: info@lunardo.com</p>
+      <p>Chan Hok Ki | s3831921 | Github: <a href="https://github.com/s3831921">s3831921</a> | <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
     </footer>
     
   </body>
