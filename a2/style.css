@@ -23,26 +23,26 @@
 }
 
 img.title {
-	display: block;
+  display: block;
   margin: 0 auto;
 }
 
 p.title1 {
-	color: gold;
-	text-align: center;
-	font-size: 230%;
-	font-weight: bold;
-	font-family: 'Great Vibes', cursive, 'Serif';
+  color: gold;
+  text-align: center;
+  font-size: 230%;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive, 'Serif';
 }
 
 p.title2 {
-	color: white;
-	text-align: center;
-	font-size: 90%;
-	font-style: italic;
-	font-weight: bold;
-	font-family: serif;
-	padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  font-style: italic;
+  font-weight: bold;
+  font-family: serif;
+  padding-bottom: 15px;
 }
 
 header {
@@ -103,33 +103,16 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-}*/
+}
 
 #about-us {
-	background-image: url("../../media/about.jpg");
+  background-image: url("../../media/about.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -180,12 +163,12 @@ div.desc {
 }
 
 #price {
- background-image: url("../../media/price.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- color: white;
+  background-image: url("../../media/price.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
   padding-left: 15px;
- padding-top: 45px;
+  padding-top: 45px;
   padding-bottom: 25px;
   overflow: auto;
 }
@@ -212,7 +195,7 @@ h1.now-showing, p.now-showing {
 }
 
 #synopsis-availability {
-	text-align: center;
+  text-align: center;
 }
 
 table {
@@ -235,16 +218,16 @@ th, td {
 }
 
 .poster {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Code for responsive and column model adapted from w3schools.com */
 .column {
   float: left;
   width: 25%;
-  padding: 5px;
-  height: 460px; 
+  padding: 15px 5px 5px 5px;
+  height: 430px; 
 }
 
 .columnn {
