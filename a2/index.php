@@ -10,23 +10,31 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
     <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Javascript, you can have more than one. -->
     <script src='wireframe.js'></script>
   </head>
-
+  <!--All images used in the body contained below have free copyright, or contain copyrighted materials not created by the author, and have been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).-->
   <body>
     <header>
-      <div><img class = "title" src="../../media/logow.png" alt="Lunardo" height=200px /></div>
+      <div><img class="title" src="../../media/lunardo.png" alt="Lunardo" width=280px></div>
+      <p class="title1">Lunardo Cinema</p>
+      <p class="title2">The Best Cinema in Town</p>
     </header>
     <div id="navbar">
  	    <ul>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#price">Price</a></li>
-        <li class="dropdown"><a href="#now-showing">Now Showing</a>
-          <ul class="dropdown-content"><a href="#synopsis">Synopsis</a></ul>
-          <ul class="dropdown-content"><a href="#booking">Booking</a></ul></li>
-      </ul> 
+  			<li><a href="#about-us">About Us</a></li>
+  			<li><a href="#price">Price</a></li>
+ 	 <li class="dropdown">
+    <a href="#now-showing" class="dropbtn">Now Showing</a>
+    <div class="dropdown-content">
+      <a href="#synopsis">Synopsis</a>
+      <a href="#booking">Booking</a>
+    </div>
+  </li>
+</ul>
     </div>
     <section id="about-us">
       <h2>About Us</h2>
@@ -106,6 +114,7 @@
         </section>
 
 <!--article--><section id='now-showing'>
+<!--Movie cover images were sourced from wikipedia.com for fair use-->
 <h1 class=now-showing>Now Showing</h1><br>
 <p class=now-showing>Below are the movies that we are now showing:-</p><br>
 <div class="row">
@@ -114,7 +123,7 @@
   </div>
   <div class="column date" style="background-color:#FF5500;">
     <h2>Star Wars:</h2>
-    <h2>The Rise of Skywalker</h2>
+    <h2>The Rise of Skywalker [M]</h2>
     <p>Mon - 12pm</p>
     <p>Tue - 12pm</p>
     <p>Wed - 6pm</p>
@@ -127,7 +136,7 @@
     <p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>
   </div>
   <div class="column date" style="background-color:#FF5500;">
-    <h2>Frozen 2</h2>
+    <h2>Frozen 2 [PG]</h2>
     <p>Mon - Nil</p>
     <p>Tue - Nil</p>
     <p>Wed - 9pm</p>
@@ -141,7 +150,7 @@
     <p class="poster"><img src='../../media/aeronauts.jpg' alt='The Aeronauts' width=90%/></p>
   </div>
   <div class="column date" style="background-color:#FF4400;">
-    <h2>The Aeronauts</h2>
+    <h2>The Aeronauts [PG]</h2>
     <p>Mon - 6pm</p>
     <p>Tue - 6pm</p>
     <p>Wed - Nil</p>
@@ -154,7 +163,7 @@
     <p class="poster"><img src='../../media/jojo.jpg' alt='Jojo Rabbit' width=90%/></p>
   </div>
   <div class="column date" style="background-color:#FF4400;">
-    <h2>Jojo Rabbit</h2>
+    <h2>Jojo Rabbit [M]</h2>
     <p>Mon - Nil</p>
     <p>Tue - Nil</p>
     <p>Wed - 12pm</p>
@@ -170,18 +179,23 @@
   <h1>Synopsis</h1><br>
 <div class="row">
   <div class="columnn">
-    <h3>Star Wars: The Rise of Skywalker</h3>
+    <h3>Star Wars: The Rise of Skywalker [M]</h3>
     <!--Description copied from https://www.imdb.com/title/tt2527338/ -->
     <h4><br>Plot description:<br></h4>
     <p><br>After Palpatine mysteriously returns, the Resistance faces the First Order once more in the final chapter of the Skywalker saga.<br></p>
     <p><br>Director: J.J. Abrams<br></p>
-    <p ><br>Writers: Chris Terrio | J.J. Abrams<br></p>
+    <p><br>Writers: Chris Terrio | J.J. Abrams<br></p>
     <p><br>Stars: Carrie Fisher | Mark Hamill | Adam Driver<br></p>
   </div>
     <div class="columnw">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div>Available: Mon-Tue: 12pm | Wed-Fri: 6pm | Sat-Sum: 12pm </div>
+  <div id="synopsis-availability"><p> 
+  	<a href="#now-showing" class="availability">Availability</a>
+	<a href="#now-showing" class="availability">Mon-Tue: 12pm</a>
+	<a href="#now-showing" class="availability">Wed-Fri: 6pm</a>
+	<a href="#now-showing" class="availability">Sat-Sun: 12pm</a>
+  	</p></div>
   </div>
 </div>
 </section>
@@ -204,8 +218,8 @@
       <p><br>&copy; Lunardo Cinema
       <script>
         document.write(new Date().getFullYear());
-      </script>. | Tel: +61 3 9925 5110 | Email: info@lunardo.com</p>
-      <p>Chan Hok Ki | s3831921 | Github: <a href="https://github.com/s3831921">s3831921</a> | <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+      </script>. | Email: info@lunardo.com | Tel: +61 3 9925 5110 | Address: La Trobe St, Melbourne</p>
+      <p><br>Chan Hok Ki | s3831921 | Github: <a href="https://github.com/s3831921">s3831921</a> | Private repository: <a href="https://github.com/s3831921/wp">here</a> | <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
     </footer>
     
   </body>
