@@ -16,6 +16,7 @@
     <!-- Javascript, you can have more than one. -->
     <script src='wireframe.js'></script>
   </head>
+  
   <!--All images used in the body contained below have free copyright, or contain copyrighted materials not created by the author, and have been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).-->
   <body>
     <header>
@@ -36,6 +37,7 @@
   			</li>
 		</ul>
     </div>
+
     <section id="about-us">
       <h2>About Us</h2>
         <p><div><br>--- Our cinema has reopened after extensive improvements and renovations!</div></p>
@@ -218,4 +220,4 @@
   </body>
 </html>
 
-<!--last update: 29.12.2019 1653 hrs-->
+<!--last update: 29.12.2019 1648 hrs-->
