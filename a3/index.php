@@ -15,6 +15,7 @@
     
     <!-- Javascript, you can have more than one. -->
     <script src='wireframe.js'></script>
+    <script src='script.js'></script>
   </head>
   
   <!--All images used in the body contained below have free copyright, or contain copyrighted materials not created by the author, and have been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).-->
@@ -168,7 +169,7 @@
     		<p>Mon - Nil</p>
     		<p>Tue - Nil</p>
     		<p>Wed - 12pm</p>
-			<p>Thu - 12pm</p>
+			  <p>Thu - 12pm</p>
     		<p>Fri - 12pm</p>
     		<p>Sat - 9pm</p>
     		<p>Sun - 9pm</p>
@@ -203,7 +204,75 @@
 
 	<section id='booking'>
   		<h1>Booking Area</h1><br>
-  		<div>Under Construction</div>
+  		
+      <div class="container">
+  <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
+    <div class="columnn">
+    <h3>Standard</h3><br>
+    <p><label for="seats[STA]">Standard Adult</label>
+    <select id="seats[STA]" name="seats[STA]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+
+    <p><label for="seats[STP]">Standard Concession</label>
+    <select id="seats[STP]" name="seats[STP]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+
+    <p><label for="seats[STC]">Standard Child</label>
+    <select id="seats[STC]" name="seats[STC]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+  </div>
+<div class="columnn">
+    <p><label for="subject">Name</label>
+    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" style="height:30px"></input></p><br>
+
+    <p><label for="subject">Email</label>
+    <input type="email" id="cust[email]" name="cust[email]" placeholder="xxxxxx@gmail.com" style="height:30px"></input></p><br>
+
+    <p><label for="subject">Mobile</label>
+    <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 xxxxxxxx" style="height:30px"></input></p><br>
+
+    <p><label for="subject">Credit Card</label>
+    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" style="height:30px"></input></p><br>
+
+    <p><label for="subject">Expiry</label>
+    <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
+</div>
+
+    <input type="submit" value="Order" >
+
+
+  </form>
+</div>
 	</section>
 
       <!--</article>-->

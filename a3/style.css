@@ -276,8 +276,9 @@ th, td {
   background-color: #111;
 }
 
-#booking {
+#booking::after {
   background-image: url("../../media/booking.jpg");
+  opacity : 0.2;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
