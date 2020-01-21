@@ -5,6 +5,7 @@
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  scroll-behavior: smooth;
 }
 
 /*code of parallax background adapted from w3schools.com*/
@@ -276,9 +277,8 @@ th, td {
   background-color: #111;
 }
 
-#booking::after {
+#booking {
   background-image: url("../../media/booking.jpg");
-  opacity : 0.2;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;

@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Javascript, you can have more than one. -->
-    <script src='wireframe.js'></script>
-    <script src='script.js'></script>
+    <script type="text/javascript" src='script.js'></script>
+    <script type="text/javascript" src='wireframe.js'></script>
   </head>
   
   <!--All images used in the body contained below have free copyright, or contain copyrighted materials not created by the author, and have been used pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).-->
@@ -134,6 +134,7 @@
     		<p>Fri - 6pm</p>
   			<p>Sat - 12pm</p>
     		<p>Sun - 12pm</p>
+          <button onclick='toggle()'>Book now!</button>
   		    </div>
   			<div class="column" style="background-color:#FF4400;">
     		<p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>
@@ -194,9 +195,13 @@
   				</div>
   				<div id="synopsis-availability"><p> 
   				<a href="#now-showing" class="availability">Availability</a>
-				<a href="#now-showing" class="availability">Mon-Tue: 12pm</a>
-				<a href="#now-showing" class="availability">Wed-Fri: 6pm</a>
-				<a href="#now-showing" class="availability">Sat-Sun: 12pm</a></p>
+				<a href="#now-showing" class="availability">Mon: 12pm</a>
+        <a href="#now-showing" class="availability">Tue: 12pm</a>
+				<a href="#now-showing" class="availability">Wed: 6pm</a>
+        <a href="#now-showing" class="availability">Thu: 6pm</a>
+        <a href="#now-showing" class="availability">Fri: 6pm</a>
+				<a href="#now-showing" class="availability">Sat: 12pm</a>
+        <a href="#now-showing" class="availability">Sun: 12pm</a></p>
 				</div>
   			  </div>
 			</div>
@@ -208,6 +213,14 @@
       <div class="container">
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
     <div class="columnn">
+	<h3>To be hidden</h3>
+	<label for="movie[ID]">Movie ID (Hidden)</label>
+    <select id="movie[ID]" name="movie[ID]" style="height:30px">
+      <option value="ACT">ACT</option>
+      <option value="AHF">AHF</option>
+      <option value="ANM">ANM</option>
+      <option value="RMC">RMC</option>	
+  </select>
     <h3>Standard</h3><br>
     <p><label for="seats[STA]">Standard Adult</label>
     <select id="seats[STA]" name="seats[STA]" style="height:30px">
@@ -251,6 +264,50 @@
       <option value="9">9</option>
     </select></p><br>
   </div>
+      <div class="columnn">
+    <h3>First Class</h3><br>
+    <p><label for="seats[FCA]">First Class Adult</label>
+    <select id="seats[FCA]" name="seats[FCA]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+
+    <p><label for="seats[FCP]">First Class Concession</label>
+    <select id="seats[FCP]" name="seats[FCP]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+
+    <p><label for="seats[FCC]">First Class Child</label>
+    <select id="seats[FCC]" name="seats[FCC]" style="height:30px">
+      <option value="0">Please select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select></p><br>
+  </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
     <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" style="height:30px"></input></p><br>
@@ -268,8 +325,8 @@
     <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
 </div>
 
-    <input type="submit" value="Order" >
-
+    <input type="submit" value="Order" onclick='calculatePrice()'>Alert</button> 
+    <span>Total: $</span><input type="text" id="updateTotal" value=''/>
 
   </form>
 </div>

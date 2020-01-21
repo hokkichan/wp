@@ -1,4 +1,4 @@
-function toggleWireframe() {
+function toggleWireframe2() {
   
   // get references to styleshets with preset id attributes
   let wfs = document.getElementById("wireframecss");
@@ -11,4 +11,8 @@ function toggleWireframe() {
   sts.disabled = !wfs.disabled;
   
   // repeat above code for other stylesheets you want to toggle
+}
+
+function myFunction() {
+  alert("Hello");
 }
