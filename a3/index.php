@@ -213,6 +213,7 @@
       <div class="container">
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
     <div class="columnn">
+  <h2>Movie Title - Day - Time</h2>
 	<h3>To be hidden</h3>
 	<label for="movie[ID]">Movie ID (Hidden)</label>
     <select id="movie[ID]" name="movie[ID]" style="height:30px">
@@ -223,21 +224,21 @@
   </select>
     <h3>Standard</h3><br>
     <p><label for="seats[STA]">Standard Adult</label>
-    <select id="seats[STA]" name="seats[STA]" style="height:30px">
+    <select id="seatsSTA" name="seats[STA]" style="height:30px" onchange="calculatePrice();">
       <option value="0">Please select</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
+      <option value="seats[STA][1]">1</option>
+      <option value="seats[STA][2]">2</option>
+      <option value="seats[STA][3]">3</option>
+      <option value="seats[STA][4]">4</option>
+      <option value="seats[STA][5]">5</option>
+      <option value="seats[STA][6]">6</option>
+      <option value="seats[STA][7]">7</option>
+      <option value="seats[STA][8]">8</option>
+      <option value="seats[STA][9]">9</option>
     </select></p><br>
 
     <p><label for="seats[STP]">Standard Concession</label>
-    <select id="seats[STP]" name="seats[STP]" style="height:30px">
+    <select id="seats[STP]" name="seats[STP]" style="height:30px" onchange="calculatePrice();>
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -319,14 +320,16 @@
     <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 xxxxxxxx" style="height:30px"></input></p><br>
 
     <p><label for="subject">Credit Card</label>
-    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" style="height:30px"></input></p><br>
+    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" style="height:30px" ></input></p><br>
 
     <p><label for="subject">Expiry</label>
     <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
 </div>
-
-    <input type="submit" value="Order" onclick='calculatePrice()'>Alert</button> 
-    <span>Total: $</span><input type="text" id="updateTotal" value=''/>
+<div class="columnn">
+  <div>
+    <label>Total: $</label><span id="updateTotal" value="updateTotal"></div>
+    <input type="submit" value="Order" onclick='calculatePrice(); checkCard();'></button> 
+</div>
 
   </form>
 </div>
@@ -346,4 +349,4 @@
   </body>
 </html>
 
-<!--last update: 29.12.2019 1648 hrs-->
+<!--last update: 21.1.2020 2212 hrs-->

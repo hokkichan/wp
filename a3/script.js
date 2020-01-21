@@ -19,14 +19,22 @@ var custMobile = "";
 var custCard = "";
 var custExpiry = "";
 
-
 function calculatePrice() {
 	var seatPrice = 20;
-	var salePrice = seatPrice * seats[STA];
-	alert(salePrice);
+	var salePrice = seatPrice * document.getElementById("seats[STC]").value;
 }
 
 function updateTotal() {
-    var updateTotal = document.getElementById('seats[STA]').value;
+    var updateTotal = document.getElementById("salePrice").value;
     updateTotal.value = total.toFixed(2);
+}
+
+function checkCard() {
+	var cardRegex = {14, 19};
+    if (cardRegex.test(document.getElementById("cust[Card]").value)) {
+	alert ("true");
+    }
+    else {
+    alert ("false");
+  }
 }
