@@ -180,7 +180,7 @@
 
 	<section id='synopsis'>
   		<h1>Synopsis</h1><br>
-			<div class="row">
+			<div class="row" id="synopsis-ACT">
   			  <div class="columnn">
     			<h3>Star Wars: The Rise of Skywalker [M]</h3>
     			<!--Description copied from https://www.imdb.com/title/tt2527338/ -->
@@ -195,13 +195,13 @@
   				</div>
   				<div id="synopsis-availability"><p> 
   				<a href="#now-showing" class="availability">Availability</a>
-				<a href="#now-showing" class="availability">Mon: 12pm</a>
-        <a href="#now-showing" class="availability">Tue: 12pm</a>
-				<a href="#now-showing" class="availability">Wed: 6pm</a>
-        <a href="#now-showing" class="availability">Thu: 6pm</a>
-        <a href="#now-showing" class="availability">Fri: 6pm</a>
-				<a href="#now-showing" class="availability">Sat: 12pm</a>
-        <a href="#now-showing" class="availability">Sun: 12pm</a></p>
+				<button type="button" onclick="selectDay("ACTMon")>Mon: 12pm</button>
+        <button type="button" onclick="selectDay("ACTTue")>Tue: 12pm</button>
+        <button type="button" onclick="selectDay("ACTWed")>Wed: 6pm</button>
+        <button type="button" onclick="selectDay("ACTThu")>Thu: 6pm</button>
+        <button type="button" onclick="selectDay("ACTFri")>Fri: 6pm</button>
+        <button type="button" onclick="selectDay("ACTSat")>Sat: 12pm</button>
+        <button type="button" onclick="selectDay("ACTSun")>Sun: 12pm</button></p>
 				</div>
   			  </div>
 			</div>
@@ -213,6 +213,7 @@
       <div class="container">
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
     <div class="columnn">
+  <h2 id="bookingFormTitle"></h2>
   <h2>Movie Title - Day - Time</h2>
 	<h3>To be hidden</h3>
 	<label for="movie[ID]">Movie ID (Hidden)</label>

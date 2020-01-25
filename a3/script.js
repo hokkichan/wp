@@ -29,12 +29,31 @@ function updateTotal() {
     updateTotal.value = total.toFixed(2);
 }
 
+function selectDay() {
+if (id == "ACTMon") {
+        document.getElementById("movie[id]").value = "ACT";
+        document.getElementById("movie[day]").value = "Monday";
+        document.getElementById("movie[hour]").value = "12pm"
+        document.getElementById("bookingFormTitle").innerHTML = ACT;
+}
+else if (id == "ACTTue") {
+        document.getElementById("movie[id]").value = "ACT";
+        document.getElementById("movie[day]").value = "Tuesday";
+        document.getElementById("movie[hour]").value = "12pm"
+        document.getElementById("bookingFormTitle").innerHTML = ACT;
+}
+
+
 function checkCard() {
-	var cardRegex = {14, 19};
-    if (cardRegex.test(document.getElementById("cust[Card]").value)) {
-	alert ("true");
-    }
-    else {
-    alert ("false");
+var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+  if(inputtxt.value.match(cardno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Not a valid card number!");
+        return false;
+        }
   }
 }
