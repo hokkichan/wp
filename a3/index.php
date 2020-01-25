@@ -194,14 +194,14 @@
     			<iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   				</div>
   				<div id="synopsis-availability"><p> 
-  				<a href="#now-showing" class="availability">Availability</a>
-				<button type="button" onclick="selectDay("ACTMon")>Mon: 12pm</button>
-        <button type="button" onclick="selectDay("ACTTue")>Tue: 12pm</button>
-        <button type="button" onclick="selectDay("ACTWed")>Wed: 6pm</button>
-        <button type="button" onclick="selectDay("ACTThu")>Thu: 6pm</button>
-        <button type="button" onclick="selectDay("ACTFri")>Fri: 6pm</button>
-        <button type="button" onclick="selectDay("ACTSat")>Sat: 12pm</button>
-        <button type="button" onclick="selectDay("ACTSun")>Sun: 12pm</button></p>
+  				<h2>Availability: </h2>
+				<button type="button" onclick="selectDay('ACTMon'); toggle()">Mon: 12pm</button>
+        <button type="button" onclick="selectDay('ACTTue')">Tue: 12pm</button>
+        <button type="button" onclick="selectDay('ACTWed')">Wed: 6pm</button>
+        <button type="button" onclick="selectDay('ACTThu')">Thu: 6pm</button>
+        <button type="button" onclick="selectDay('ACTFri')">Fri: 6pm</button>
+        <button type="button" onclick="selectDay('ACTSat')">Sat: 12pm</button>
+        <button type="button" onclick="selectDay('ACTSun')">Sun: 12pm</button></p>
 				</div>
   			  </div>
 			</div>
@@ -211,35 +211,31 @@
   		<h1>Booking Area</h1><br>
   		
       <div class="container">
-  <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
+  <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validate()">
     <div class="columnn">
-  <h2 id="bookingFormTitle"></h2>
-  <h2>Movie Title - Day - Time</h2>
+  <h2 id="bookingFormTitle">Movie Title - Day - Time</h2>
 	<h3>To be hidden</h3>
-	<label for="movie[ID]">Movie ID (Hidden)</label>
-    <select id="movie[ID]" name="movie[ID]" style="height:30px">
-      <option value="ACT">ACT</option>
-      <option value="AHF">AHF</option>
-      <option value="ANM">ANM</option>
-      <option value="RMC">RMC</option>	
-  </select>
+    <input id="movie[id]" name="movie[id]" value=""></input>
+    <input id="movie[day]" name="movie[day]" value=""></input>
+    <input id="movie[hour]" name="movie[hour]" value=""></input>
+
     <h3>Standard</h3><br>
     <p><label for="seats[STA]">Standard Adult</label>
-    <select id="seatsSTA" name="seats[STA]" style="height:30px" onchange="calculatePrice();">
+    <select id="seatsSTA" name="seats[STA]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
-      <option value="seats[STA][1]">1</option>
-      <option value="seats[STA][2]">2</option>
-      <option value="seats[STA][3]">3</option>
-      <option value="seats[STA][4]">4</option>
-      <option value="seats[STA][5]">5</option>
-      <option value="seats[STA][6]">6</option>
-      <option value="seats[STA][7]">7</option>
-      <option value="seats[STA][8]">8</option>
-      <option value="seats[STA][9]">9</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
     </select></p><br>
 
     <p><label for="seats[STP]">Standard Concession</label>
-    <select id="seats[STP]" name="seats[STP]" style="height:30px" onchange="calculatePrice();>
+    <select id="seats[STP]" name="seats[STP]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -327,11 +323,8 @@
     <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
 </div>
 <div class="columnn">
-  <div>
-    <label>Total: $</label><span id="updateTotal" value="updateTotal"></div>
-    <input type="submit" value="Order" onclick='calculatePrice(); checkCard();'></button> 
-</div>
-
+  <div><label>Total: $</label><input type="number" id="totalPrice" name="totalPrice" value=""></div>
+  <div><input type="submit" value="Order"></div>
   </form>
 </div>
 	</section>

@@ -1,6 +1,5 @@
 function toggle() {
 alert('I am an alert box!');
-document.getElementsByTagName("movie[ID]") = "RMC";
 } //For testing only
 
 var movieId = ["ACT", "AHF", "ANM", "RMC"];
@@ -19,34 +18,36 @@ var custMobile = "";
 var custCard = "";
 var custExpiry = "";
 
-function calculatePrice() {
-	var seatPrice = 20;
-	var salePrice = seatPrice * document.getElementById("seats[STC]").value;
-}
-
 function updateTotal() {
-    var updateTotal = document.getElementById("salePrice").value;
-    updateTotal.value = total.toFixed(2);
+	var totalPrice = 0;
+	var totalPrice += document.getElementById("seats[STA]").value;
 }
 
-function selectDay() {
+function selectDay(id) {
 if (id == "ACTMon") {
-        document.getElementById("movie[id]").value = "ACT";
-        document.getElementById("movie[day]").value = "Monday";
-        document.getElementById("movie[hour]").value = "12pm"
-        document.getElementById("bookingFormTitle").innerHTML = ACT;
-}
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Monday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").innerHTML = ACT;
+  }
 else if (id == "ACTTue") {
-        document.getElementById("movie[id]").value = "ACT";
-        document.getElementById("movie[day]").value = "Tuesday";
-        document.getElementById("movie[hour]").value = "12pm"
-        document.getElementById("bookingFormTitle").innerHTML = ACT;
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Tuesday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").innerHTML = ACT;
+  }
+}
+function updatedHeading () {
+    var updatedHeading = document.getElementById("bookingFormHeading");
+    let updatedFormTitle = movie[title] + ' - ' + movie[day] + ' - ' + movie[hour];
+    bookingFormTitle.innerHTML = updatedFormTitle;
 }
 
 
-function checkCard() {
-var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
-  if(inputtxt.value.match(cardno))
+function validate() {
+var cardno = document.getElementById("custCard").value;
+var cardRegex = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+  if(cardRegex.value.match(cardno))
         {
       return true;
         }
@@ -56,4 +57,4 @@ var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
         return false;
         }
   }
-}
+
