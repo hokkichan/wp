@@ -195,7 +195,7 @@
   				</div>
   				<div id="synopsis-availability"><p> 
   				<h2>Availability: </h2>
-				<button type="button" onclick="selectDay('ACTMon'); toggle()">Mon: 12pm</button>
+				<button type="button" onclick="selectDay('ACTMon')">Mon: 12pm</button>
         <button type="button" onclick="selectDay('ACTTue')">Tue: 12pm</button>
         <button type="button" onclick="selectDay('ACTWed')">Wed: 6pm</button>
         <button type="button" onclick="selectDay('ACTThu')">Thu: 6pm</button>
@@ -317,7 +317,7 @@
     <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 xxxxxxxx" style="height:30px"></input></p><br>
 
     <p><label for="subject">Credit Card</label>
-    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" style="height:30px" ></input></p><br>
+    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" onchange="validateCard()" style="height:30px" ></input></p><br>
 
     <p><label for="subject">Expiry</label>
     <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>

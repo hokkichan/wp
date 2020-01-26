@@ -18,11 +18,6 @@ var custMobile = "";
 var custCard = "";
 var custExpiry = "";
 
-function updateTotal() {
-	var totalPrice = 0;
-	var totalPrice += document.getElementById("seats[STA]").value;
-}
-
 function selectDay(id) {
 if (id == "ACTMon") {
   document.getElementById("movie[id]").value = "ACT";
@@ -37,24 +32,17 @@ else if (id == "ACTTue") {
   document.getElementById("bookingFormTitle").innerHTML = ACT;
   }
 }
-function updatedHeading () {
-    var updatedHeading = document.getElementById("bookingFormHeading");
-    let updatedFormTitle = movie[title] + ' - ' + movie[day] + ' - ' + movie[hour];
-    bookingFormTitle.innerHTML = updatedFormTitle;
+
+function updateTotal() {
+  document.getElementById("totalPrice").value = 20;
 }
 
+function validateCard() {
+var cardNo = document.getElementById("cust[card]").value;
+var cardRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
+var cardValidation = cardRegex.test(cardNo);
 
-function validate() {
-var cardno = document.getElementById("custCard").value;
-var cardRegex = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
-  if(cardRegex.value.match(cardno))
-        {
-      return true;
-        }
-      else
-        {
-        alert("Not a valid card number!");
-        return false;
-        }
+    if (!cardValidation) {
+        alert("Please enter correct card number");
+    }
   }
-
