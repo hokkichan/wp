@@ -25,20 +25,16 @@
       <p class="title1">Lunardo Cinema</p>
       <p class="title2">The Best Cinema in Town</p>
     </header>
-    <div id="navbar">
- 	    <ul>
-  			<li><a href="#about-us">About Us</a></li>
-  			<li><a href="#price">Price</a></li>
- 	 		<li class="dropdown">
-    			<a href="#now-showing" class="dropbtn">Now Showing</a>
-    			<div class="dropdown-content">
-      				<a href="#synopsis">Synopsis</a>
-      				<a href="#booking">Booking</a>
-    			</div>
-  			</li>
-		</ul>
-    </div>
 
+    <nav>
+ 	    <a href="#about-us">About Us</a>
+  		<a href="#price">Price</a>
+ 	 		<a href="#now-showing">Now Showing</a>
+    	<a href="#synopsis">Synopsis</a>
+      <a href="#booking">Booking</a>
+    </nav>
+
+<main class="main">
     <section id="about-us">
       <h2>About Us</h2>
         <p><div><br>--- Our cinema has reopened after extensive improvements and renovations!</div></p>
@@ -214,8 +210,8 @@
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validate()">
     <div class="columnn">
   <h2 id="bookingFormTitle">Movie Title - Day - Time</h2>
-	<h3>To be hidden</h3>
-    <input id="movie[id]" name="movie[id]" value=""></input>
+    <input type="hidden" id="movie[id]" name="movie[id]" value=""></input>
+    <!--<input id="bookingFormTitle" name="bookingFormTitle" value=""></input>-->
     <input id="movie[day]" name="movie[day]" value=""></input>
     <input id="movie[hour]" name="movie[hour]" value=""></input>
 
@@ -328,7 +324,7 @@
   </form>
 </div>
 	</section>
-
+</main>
       <!--</article>-->
 
     <footer>

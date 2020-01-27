@@ -8,7 +8,6 @@
   scroll-behavior: smooth;
 }
 
-/*code of parallax background adapted from w3schools.com*/
 #about-us, #price, #synopsis, #booking {
   position: relative;
   background-attachment: fixed;
@@ -50,67 +49,38 @@ header {
   background-color: black;
 }
 
-#navbar {
+nav {
   top: 0px;
   bottom: 0px;
   position: sticky;
+  width: 100%;
   z-index: 1;
+  overflow: hidden;
+  background-color: gold;
 }
 
-/*code of dropdown menu adapted from w3schools.com*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+nav a {
+  padding: 15px 0px 15px 0px;
+  margin: 0px;
+  display: inline-block;
+  background-color: gold;
+  color: white;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+nav a:hover {
   background-color: darkorange;
 }
 
-li {
-  float: left;
+nav a.current {
+  background-color: red;
+  transition: 0.2s;
 }
 
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #111;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(255,200,0);
-  font-style: italic;
-  width: 128px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 #about-us {
   background-image: url("../../media/about.jpg");
