@@ -210,8 +210,8 @@
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validate()">
     <div class="columnn">
   <h2 id="bookingFormTitle">Movie Title - Day - Time</h2>
-    <input type="hidden" id="movie[id]" name="movie[id]" value=""></input>
     <!--<input id="bookingFormTitle" name="bookingFormTitle" value=""></input>-->
+    <input id="movie[id]" name="movie[id]" value=""></input>
     <input id="movie[day]" name="movie[day]" value=""></input>
     <input id="movie[hour]" name="movie[hour]" value=""></input>
 
