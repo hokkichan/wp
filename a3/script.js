@@ -177,15 +177,28 @@ if (id == "ACTMon") {
 
 
 function updateTotal() {
-  document.getElementById("totalPrice").value = 20;
+  var day = document.getElementById("movie[day]").value;
+  var hour = document.getElementById("movie[hour]").value;
+  var totalPrice = 0;
+
+  if (document.getElementById("movie[day]").value = "Monday") {
+  var totalPrice = 20* document.getElementById("seats[STA]").value;
+  totalPrice += 10* document.getElementById("seats[STP]").value;
+  document.getElementById("totalPrice").value = totalPrice;
+  }
+  else {
+  var totalPrice = 2* document.getElementById("seats[STA]").value;
+  totalPrice += 1* document.getElementById("seats[STP]").value;
+  document.getElementById("totalPrice").value = totalPrice;
+  }
 }
 
 
 
 function validateName() {
-  var name = document.getElementById("cust[name]").value;
-  var nameRegex = /^[a-zA-Z ]{1, 30}$/;
-  var nameValidation = nameRegex.text(name);
+  var custName = document.getElementById("cust[name]").value;
+  var nameRegex = /^[a-zA-Z \-.']{1,100}$/;
+  var nameValidation = nameRegex.text(custName);
     if (!nameValidation) {
       alert("Please enter the correct name!")
     }
@@ -194,10 +207,19 @@ function validateName() {
 //function validateEmail() {
 //Regex for email validation would be done by browser
 
+function validateMobile() {
+var custMobile = document.getElementById("cust[mobile]").value;
+var mobileRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
+var mobileValidation = cardRegex.test(custMobile);
+    if (!mobileValidation) {
+        alert("Please enter the correct mobile number!");
+    }
+}
+
 function validateCard() {
-var cardNo = document.getElementById("cust[card]").value;
+var custCard = document.getElementById("cust[card]").value;
 var cardRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
-var cardValidation = cardRegex.test(cardNo);
+var cardValidation = cardRegex.test(custCard);
     if (!cardValidation) {
         alert("Please enter the correct card number!");
     }

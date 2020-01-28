@@ -136,7 +136,7 @@
     		<p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>
   			</div>
   			<div class="column date" style="background-color:#FF5500;">
-    		<h2>Frozen 2 [PG]</h2>
+    		<h2>Frozen 2 [PG]</h2><br>
     		<p>Mon - Nil</p>
     		<p>Tue - Nil</p>
     		<p>Wed - 9pm</p>
@@ -283,14 +283,14 @@
   <form id='bookingform' method = "post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validate()">
     <div class="columnn">
     <h2>Movie Title - Day - Time</h2>
-    <div><input id="bookingFormTitle" name="bookingFormTitle" value=""></input></div>
+    <div><input id="bookingFormTitle" name="bookingFormTitle" value="" size="30"></input></div>
     <input type="hidden" id="movie[id]" name="movie[id]" value=""></input>
-    <div><input id="movie[day]" name="movie[day]" value=""></input></div>
-    <div><input id="movie[hour]" name="movie[hour]" value=""></input></div><br>
+    <div><input id="movie[day]" name="movie[day]" value="" size="12"></input><input id="movie[hour]" name="movie[hour]" value="" size="12"></input></div>
+    <br>
 
     <h3>Standard</h3>
     <p><label for="seats[STA]">Standard Adult</label>
-    <select id="seatsSTA" name="seats[STA]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[STA]" name="seats[STA]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -377,21 +377,21 @@
   </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
-    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" onchange="validateName()" style="height:30px"></input></p><br>
+    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" onchange="validateName()" style="height:30px" size="30"></input></p><br>
 
     <p><label for="subject">Email</label>
-    <input type="email" id="cust[email]" name="cust[email]" placeholder="xxxxxx@gmail.com" style="height:30px"></input></p><br>
+    <input type="email" id="cust[email]" name="cust[email]" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
 
     <p><label for="subject">Mobile</label>
-    <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 xxxxxxxx" style="height:30px"></input></p><br>
+    <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 1234567890" onchange="validateMobile()" style="height:30px" size="12"></input></p><br>
 
     <p><label for="subject">Credit Card</label>
-    <input type="text" id="cust[card]" name="cust[card]" placeholder="xxxx xxxx xxxx xxxxx" onchange="validateCard()" style="height:30px" ></input></p><br>
+    <input type="text" id="cust[card]" name="cust[card]" placeholder="1234 5678 9012 3456 789" onchange="validateCard()" style="height:30px" size="23"></input></p><br>
 
     <p><label for="subject">Expiry</label>
     <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
 
-  <div><label>Total: $</label><input type="number" id="totalPrice" name="totalPrice" value=""></div>
+  <div><label>Total: $</label><input type="number" id="totalPrice" name="totalPrice" value="0"></div>
   <div><input type="submit" value="Order"></div>
   </form>
 </div>
