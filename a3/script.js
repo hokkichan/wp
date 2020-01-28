@@ -1,3 +1,4 @@
+//Function on nav bar with color change on scrolling
 window.onscroll = function () {
   //console.clear();
   //console.log("Win Y: "+window.scrollY);
@@ -16,7 +17,11 @@ window.onscroll = function () {
   }
 }
 
+//Code on showing/hiding synopsis
+//It is regretful that despite repeated trying, I could not produce the code on showing/hiding synopsis upon toggling, 
+//so I chose to display the synopsis of all four movies.
 
+//Function on updating booking form
 var movieId = ["ACT", "AHF", "ANM", "RMC"];
 var movieDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var movieHour = ["12pm", "3pm", "6pm", "9pm"];
@@ -41,19 +46,132 @@ if (id == "ACTMon") {
   document.getElementById("movie[hour]").value = "12pm";
   document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
   }
-else if (id == "ACTTue") {
+  else if (id == "ACTTue") {
   document.getElementById("movie[id]").value = "ACT";
   document.getElementById("movie[day]").value = "Tuesday";
   document.getElementById("movie[hour]").value = "12pm";
-  document.getElementById("bookingFormTitle").innerHTML = ACT;
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
   }
-else if (id == "ANMWed") {
+  else if (id == "ACTWed") {
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Wednesday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
+  }
+  else if (id == "ACTThu") {
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Thursday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
+  }
+  else if (id == "ACTFri") {
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Friday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
+  }
+  else if (id == "ACTSat") {
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Saturday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
+  }
+  else if (id == "ACTSun") {
+  document.getElementById("movie[id]").value = "ACT";
+  document.getElementById("movie[day]").value = "Sunday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
+  }
+  else if (id == "ANMWed") {
   document.getElementById("movie[id]").value = "ANM";
   document.getElementById("movie[day]").value = "Wednesday";
   document.getElementById("movie[hour]").value = "9pm";
   document.getElementById("bookingFormTitle").value = "Frozen 2";
   }
-
+  else if (id == "ANMThu") {
+  document.getElementById("movie[id]").value = "ANM";
+  document.getElementById("movie[day]").value = "Thursday";
+  document.getElementById("movie[hour]").value = "9pm";
+  document.getElementById("bookingFormTitle").value = "Frozen 2";
+  }
+  else if (id == "ANMFri") {
+  document.getElementById("movie[id]").value = "ANM";
+  document.getElementById("movie[day]").value = "Friday";
+  document.getElementById("movie[hour]").value = "9pm";
+  document.getElementById("bookingFormTitle").value = "Frozen 2";
+  }
+  else if (id == "ANMSat") {
+  document.getElementById("movie[id]").value = "ANM";
+  document.getElementById("movie[day]").value = "Saturday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "Frozen 2";
+  }
+  else if (id == "ANMSun") {
+  document.getElementById("movie[id]").value = "ANM";
+  document.getElementById("movie[day]").value = "Sunday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "Frozen 2";
+  }
+  else if (id == "RMCMon") {
+  document.getElementById("movie[id]").value = "RMC";
+  document.getElementById("movie[day]").value = "Monday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "The Aeronauts";
+  }
+  else if (id == "RMCTue") {
+  document.getElementById("movie[id]").value = "RMC";
+  document.getElementById("movie[day]").value = "Tuesday";
+  document.getElementById("movie[hour]").value = "6pm";
+  document.getElementById("bookingFormTitle").value = "The Aeronauts";
+  }
+  else if (id == "RMCSat") {
+  document.getElementById("movie[id]").value = "RMC";
+  document.getElementById("movie[day]").value = "Saturday";
+  document.getElementById("movie[hour]").value = "3pm";
+  document.getElementById("bookingFormTitle").value = "The Aeronauts";
+  }
+  else if (id == "RMCSun") {
+  document.getElementById("movie[id]").value = "RMC";
+  document.getElementById("movie[day]").value = "Sunday";
+  document.getElementById("movie[hour]").value = "3pm";
+  document.getElementById("bookingFormTitle").value = "The Aeronauts";
+  }
+  else if (id == "RMCSun") {
+  document.getElementById("movie[id]").value = "RMC";
+  document.getElementById("movie[day]").value = "Sunday";
+  document.getElementById("movie[hour]").value = "3pm";
+  document.getElementById("bookingFormTitle").value = "The Aeronauts";
+  }
+  else if (id == "AHFWed") {
+  document.getElementById("movie[id]").value = "AHF";
+  document.getElementById("movie[day]").value = "Wednesday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
+  }
+  else if (id == "AHFThu") {
+  document.getElementById("movie[id]").value = "AHF";
+  document.getElementById("movie[day]").value = "Thursday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
+  }
+  else if (id == "AHFFri") {
+  document.getElementById("movie[id]").value = "AHF";
+  document.getElementById("movie[day]").value = "Friday";
+  document.getElementById("movie[hour]").value = "12pm";
+  document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
+  }
+  else if (id == "AHFSun") {
+  document.getElementById("movie[id]").value = "AHF";
+  document.getElementById("movie[day]").value = "Saturday";
+  document.getElementById("movie[hour]").value = "9pm";
+  document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
+  }
+  else if (id == "AHFSun") {
+  document.getElementById("movie[id]").value = "AHF";
+  document.getElementById("movie[day]").value = "Sunday";
+  document.getElementById("movie[hour]").value = "9pm";
+  document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
+  }
 }
 
 
@@ -73,14 +191,8 @@ function validateName() {
     }
 }
 
-function validateEmail() {
-  var email = document.getElementById("cust[email]").value;
-  var emailRegex = /^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/;
-  var emailValidation = emailRegex.text(email);
-    if (!emailValidation) {
-      alert("Please enter the correct email!")
-    }
-}
+//function validateEmail() {
+//Regex for email validation would be done by browser
 
 function validateCard() {
 var cardNo = document.getElementById("cust[card]").value;

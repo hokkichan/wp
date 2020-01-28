@@ -65,7 +65,7 @@
 
     <section id="price">
       <h2>Price</h2>
-      <p><br>The Cinema offers discounted pricing weekday afternoons at 12pm (ie weekday martineé sessions, Mon - Fri and all day on Mon and Tue.</p><br>
+      <p><br>The Cinema offers discounted pricing weekday afternoons at 12pm (ie weekday martineé sessions, Mon - Fri and all day on Mon and Tue).</p><br>
       <table id="table-price">
   		<tr>
     	<th>Seat Type</th>
@@ -130,7 +130,7 @@
     		<p>Fri - 6pm</p>
   			<p>Sat - 12pm</p>
     		<p>Sun - 12pm</p>
-          <button onclick='toggle()'>Book now!</button>
+        <a href="#synopsis-ACT"><button>Synopsis</button></a>
   		    </div>
   			<div class="column" style="background-color:#FF4400;">
     		<p class="poster"><img src='../../media/frozen2.jpg' alt='Frozen 2' width=90%/></p>
@@ -144,6 +144,7 @@
     		<p>Fri - 9pm</p>
     		<p>Sat - 6pm</p>
     		<p>Sun - 6pm</p>
+        <a href="#synopsis-ANM"><button>Synopsis</button></a>
   		    </div>
   			<div class="column" style="background-color:#FF5500;">
     		<p class="poster"><img src='../../media/aeronauts.jpg' alt='The Aeronauts' width=90%/></p>
@@ -157,6 +158,7 @@
     		<p>Fri - Nil</p>
    			<p>Sat - 3pm</p>
     		<p>Sun - 3pm</p>
+        <a href="#synopsis-RMC"><button>Synopsis</button></a>
   		    </div>
 			<div class="column" style="background-color:#FF5500;">
     		<p class="poster"><img src='../../media/jojo.jpg' alt='Jojo Rabbit' width=90%/></p>
@@ -170,6 +172,7 @@
     		<p>Fri - 12pm</p>
     		<p>Sat - 9pm</p>
     		<p>Sun - 9pm</p>
+        <a href="#synopsis-AHF"><button>Synopsis</button></a>
   		    </div>
 		  </div>
 	</section>
@@ -191,13 +194,13 @@
   				</div>
   				<div id="synopsis-availability"><p> 
   				<h2>Availability: </h2>
-				<button type="button" onclick="selectDay('ACTMon')">Mon: 12pm</button>
-        <button type="button" onclick="selectDay('ACTTue')">Tue: 12pm</button>
-        <button type="button" onclick="selectDay('ACTWed')">Wed: 6pm</button>
-        <button type="button" onclick="selectDay('ACTThu')">Thu: 6pm</button>
-        <button type="button" onclick="selectDay('ACTFri')">Fri: 6pm</button>
-        <button type="button" onclick="selectDay('ACTSat')">Sat: 12pm</button>
-        <button type="button" onclick="selectDay('ACTSun')">Sun: 12pm</button></p>
+				<a href="#booking"><button type="button" onclick="selectDay('ACTMon')">Mon: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTTue')">Tue: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTWed')">Wed: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTThu')">Thu: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTFri')">Fri: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTSat')">Sat: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ACTSun')">Sun: 12pm</button></a></p>
 				</div>
   			  </div>
 			</div>
@@ -207,8 +210,7 @@
           <h3>Frozen 2 [PG]</h3>
           <!--Description copied from https://en.wikipedia.org/wiki/Frozen_II -->
           <h4><br>Plot description:<br></h4>
-          <p><br>Embarked on a journey beyond their kingdom of Arendelle,Elsa, Anna, Kristoff and Olaf discovered the origin of Elsa's magical powers and saved their kingdom.
-            <br></p>
+          <p><br>Embarked on a journey beyond their kingdom of Arendelle,Elsa, Anna, Kristoff and Olaf discovered the origin of Elsa's magical powers and saved their kingdom.<br></p>
           <p><br>Directors: Chris Buck | Jennifer Lee<br></p>
           <p><br>Writer: Jennifer Lee<br></p>
           </div>
@@ -217,11 +219,58 @@
           </div>
           <div id="synopsis-availability"><p> 
           <h2>Availability: </h2>
-        <button type="button" onclick="selectDay('ANMWed')">Wed: 9pm</button>
-        <button type="button" onclick="selectDay('ANMThu')">Thu: 9pm</button>
-        <button type="button" onclick="selectDay('ANMFri')">Fri: 9pm</button>
-        <button type="button" onclick="selectDay('ANMSat')">Sat: 6pm</button>
-        <button type="button" onclick="selectDay('ANMSun')">Sun: 6pm</button></p>
+        <a href="#booking"><button type="button" onclick="selectDay('ANMWed')">Wed: 9pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ANMThu')">Thu: 9pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ANMFri')">Fri: 9pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ANMSat')">Sat: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('ANMSun')">Sun: 6pm</button></a></p>
+        </div>
+          </div>
+      </div>
+      <br>
+      <div class="row" id="synopsis-RMC">
+          <div class="columnn">
+          <h3>The Aeronauts [PG]</h3>
+          <!--Description copied from https://en.wikipedia.org/wiki/Frozen_II -->
+          <h4><br>Plot description:<br></h4>
+          <p><br>In 1862, headstrong scientist James Glaisher and wealthy young widow Amelia Wren mount a balloon expedition to fly higher than anyone in history. The unlikely duo soon discover things about themselves.<br></p>
+          <p><br>Director: Tom Harper<br></p>
+          <p><br>Writer: Jack Thorne<br></p>
+          <p><br>Stars: Felicity Jones | Eddie Redmayne<br></p>
+          </div>
+          <div class="columnw">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Rm4VnwCtQO8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="synopsis-availability"><p> 
+          <h2>Availability: </h2>
+        <a href="#booking"><button type="button" onclick="selectDay('RMCMon')">Mon: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('RMCTue')">Tue: 6pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('RMCSat')">Sat: 3pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('RMCSun')">Sun: 3pm</button></a></p>
+        </div>
+          </div>
+      </div>
+      <br>
+      <div class="row" id="synopsis-AHF">
+      <div class="columnn">
+          <h3>Jojo Rabbit [M]</h3>
+          <!--Description copied from https://www.imdb.com/title/tt2584384/ -->
+          <h4><br>Plot description:<br></h4>
+          <p><br>A young boy in Hitler's army finds out his mother is hiding a Jewish girl in their home.<br></p>
+          <p><br>Director: Taika Waititi<br></p>
+          <p><br>Writer: Taika Waititi<br></p>
+          <p><br>Stars: Roman Griffin Davis | Thomasin McKenzie | Taika Waititi<br></p>
+          </div>
+          <div class="columnw">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tL4McUzXfFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="synopsis-availability"><p> 
+          <h2>Availability: </h2>
+        <a href="#booking"><button type="button" onclick="selectDay('AHFWed')">Wed: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('AHFThu')">Thu: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('AHFFri')">Fri: 12pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('AHFSat')">Sat: 9pm</button></a>
+        <a href="#booking"><button type="button" onclick="selectDay('AHFSun')">Sun: 9pm</button></a></p>
         </div>
           </div>
       </div>
@@ -328,10 +377,10 @@
   </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
-    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" onchange="validateEmail()" style="height:30px"></input></p><br>
+    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" onchange="validateName()" style="height:30px"></input></p><br>
 
     <p><label for="subject">Email</label>
-    <input type="email" id="cust[email]" name="cust[email]" placeholder="xxxxxx@gmail.com" onchange="validateEmail()" style="height:30px"></input></p><br>
+    <input type="email" id="cust[email]" name="cust[email]" placeholder="xxxxxx@gmail.com" style="height:30px"></input></p><br>
 
     <p><label for="subject">Mobile</label>
     <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 xxxxxxxx" style="height:30px"></input></p><br>
