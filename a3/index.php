@@ -92,7 +92,7 @@
     	<td>15.50</td>
   		</tr>
   		<tr>
-    	<td>First Class Child</td>
+    	<td>First Class Adult</td>
     	<td>FCA</td>
     	<td>25.00</td>
     	<td>30.00</td>
@@ -318,7 +318,7 @@
     </select></p><br>
 
     <p><label for="seats[STC]">Standard Child</label>
-    <select id="seats[STC]" name="seats[STC]" style="height:30px">
+    <select id="seats[STC]" name="seats[STC]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -334,7 +334,7 @@
       <div class="columnn">
     <h3>First Class</h3><br>
     <p><label for="seats[FCA]">First Class Adult</label>
-    <select id="seats[FCA]" name="seats[FCA]" style="height:30px">
+    <select id="seats[FCA]" name="seats[FCA]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -348,7 +348,7 @@
     </select></p><br>
 
     <p><label for="seats[FCP]">First Class Concession</label>
-    <select id="seats[FCP]" name="seats[FCP]" style="height:30px">
+    <select id="seats[FCP]" name="seats[FCP]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -362,7 +362,7 @@
     </select></p><br>
 
     <p><label for="seats[FCC]">First Class Child</label>
-    <select id="seats[FCC]" name="seats[FCC]" style="height:30px">
+    <select id="seats[FCC]" name="seats[FCC]" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>

@@ -39,6 +39,8 @@ var custMobile = "";
 var custCard = "";
 var custExpiry = "";
 
+
+//Update booking form title and movie selection data
 function selectDay(id) {
 if (id == "ACTMon") {
   document.getElementById("movie[id]").value = "ACT";
@@ -160,7 +162,7 @@ if (id == "ACTMon") {
   document.getElementById("movie[hour]").value = "12pm";
   document.getElementById("bookingFormTitle").value = "Jojo Rabbit";
   }
-  else if (id == "AHFSun") {
+  else if (id == "AHFSat") {
   document.getElementById("movie[id]").value = "AHF";
   document.getElementById("movie[day]").value = "Saturday";
   document.getElementById("movie[hour]").value = "9pm";
@@ -174,33 +176,51 @@ if (id == "ACTMon") {
   }
 }
 
-
+//function for updating the total order price
 
 function updateTotal() {
   var day = document.getElementById("movie[day]").value;
   var hour = document.getElementById("movie[hour]").value;
   var totalPrice = 0;
 
-  if (document.getElementById("movie[day]").value = "Monday") {
-  var totalPrice = 20* document.getElementById("seats[STA]").value;
-  totalPrice += 10* document.getElementById("seats[STP]").value;
-  document.getElementById("totalPrice").value = totalPrice;
+ if (day == "Monday"|| day == "Tuesday") {
+  var totalPrice = 15* document.getElementById("seats[STA]").value;
+  totalPrice += 13* document.getElementById("seats[STP]").value;
+  totalPrice += 11* document.getElementById("seats[STC]").value;
+  totalPrice += 25* document.getElementById("seats[FCA]").value;
+  totalPrice += 23* document.getElementById("seats[FCP]").value;
+  totalPrice += 21* document.getElementById("seats[FCC]").value;
+  document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+  }
+  else if ((day == "Wednesday" || day == "Thursday" || day == "Friday") && (hour == "12pm")) {
+  var totalPrice = 15* document.getElementById("seats[STA]").value;
+  totalPrice += 13* document.getElementById("seats[STP]").value;
+  totalPrice += 11* document.getElementById("seats[STC]").value;
+  totalPrice += 25* document.getElementById("seats[FCA]").value;
+  totalPrice += 23* document.getElementById("seats[FCP]").value;
+  totalPrice += 21* document.getElementById("seats[FCC]").value;
+  document.getElementById("totalPrice").value = totalPrice.toFixed(2);
   }
   else {
-  var totalPrice = 2* document.getElementById("seats[STA]").value;
-  totalPrice += 1* document.getElementById("seats[STP]").value;
-  document.getElementById("totalPrice").value = totalPrice;
+  var totalPrice = 20.5* document.getElementById("seats[STA]").value;
+  totalPrice += 18* document.getElementById("seats[STP]").value;
+  totalPrice += 15.5* document.getElementById("seats[STC]").value;
+  totalPrice += 30* document.getElementById("seats[FCA]").value;
+  totalPrice += 27.5* document.getElementById("seats[FCP]").value;
+  totalPrice += 25* document.getElementById("seats[FCC]").value;
+  document.getElementById("totalPrice").value = totalPrice.toFixed(2);
   }
 }
 
-
+//validate functions of name, mobile and credit card number
 
 function validateName() {
   var custName = document.getElementById("cust[name]").value;
   var nameRegex = /^[a-zA-Z \-.']{1,100}$/;
   var nameValidation = nameRegex.text(custName);
     if (!nameValidation) {
-      alert("Please enter the correct name!")
+      alert("Please enter the correct name!");
+      return false;
     }
 }
 
@@ -208,19 +228,35 @@ function validateName() {
 //Regex for email validation would be done by browser
 
 function validateMobile() {
-var custMobile = document.getElementById("cust[mobile]").value;
-var mobileRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
-var mobileValidation = cardRegex.test(custMobile);
+  var custMobile = document.getElementById("cust[mobile]").value;
+  var mobileRegex = /^(\(04\)|04|\+614)( ?\d){8}$/;
+  var mobileValidation = cardRegex.test(custMobile);
     if (!mobileValidation) {
         alert("Please enter the correct mobile number!");
+        return false;
     }
 }
 
 function validateCard() {
-var custCard = document.getElementById("cust[card]").value;
-var cardRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
-var cardValidation = cardRegex.test(custCard);
+  var custCard = document.getElementById("cust[card]").value;
+  var cardRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
+  var cardValidation = cardRegex.test(custCard);
     if (!cardValidation) {
         alert("Please enter the correct card number!");
+        return false;
     }
 }
+
+//The part on data validation does not work despite repeated attempts
+//function validateDate() {
+//  var currentDate = new Date();
+//  var currentMonth = currentDate.getMonth()+1;
+//  var currentYear = currentDate.getFullYear();
+//  var expiryMonth = document.getElementById("custExpiry").value;
+//  var expiryYear = document.getElementById("custExpiry").value;
+//    if ( (currentYear >= expireYear) && (currentMonth > expireMonth) ) {
+//    alert("Invalid date!");
+//    return false;
+//    }
+//}
+
