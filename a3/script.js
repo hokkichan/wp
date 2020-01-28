@@ -22,10 +22,16 @@ window.onscroll = function () {
 //so I chose to display the synopsis of all four movies.
 
 //Function on updating booking form
-var movieId = ["ACT", "AHF", "ANM", "RMC"];
+var movieId = ["ACT", "ANM", "RMC", "AHF"];
+//Key:
+//ACT = Star Wars: The Rise of Skywalker [M]
+//ANM = Frozen 2
+//RMC = The Aeronauts
+//AHF = Jojo Rabbit
+
 var movieDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var movieHour = ["12pm", "3pm", "6pm", "9pm"];
-var bookingFormTitle = ["Star Wars The Rise of Skywalker"];
+var bookingFormTitle = ["Star Wars: The Rise of Skywalker", "Frozen 2", "The Aeronauts", "Jojo Rabbit"];
 var seatsSTA = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var seatsSTP = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var seatsSTC = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];

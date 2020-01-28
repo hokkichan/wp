@@ -377,7 +377,7 @@
   </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
-    <input type="text" id="cust[name]" name="cust[name]" placeholder="Scott Morrison" onchange="validateName()" style="height:30px" size="30"></input></p><br>
+    <input type="text" id="cust[name]" name="cust[name]" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input></p><br>
 
     <p><label for="subject">Email</label>
     <input type="email" id="cust[email]" name="cust[email]" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
