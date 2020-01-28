@@ -39,7 +39,7 @@ if (id == "ACTMon") {
   document.getElementById("movie[id]").value = "ACT";
   document.getElementById("movie[day]").value = "Monday";
   document.getElementById("movie[hour]").value = "12pm";
-  document.getElementById("bookingFormTitle").innerHTML = ACT;
+  document.getElementById("bookingFormTitle").value = "Star Wars: The Rise of Skywalker";
   }
 else if (id == "ACTTue") {
   document.getElementById("movie[id]").value = "ACT";
@@ -47,18 +47,46 @@ else if (id == "ACTTue") {
   document.getElementById("movie[hour]").value = "12pm";
   document.getElementById("bookingFormTitle").innerHTML = ACT;
   }
+else if (id == "ANMWed") {
+  document.getElementById("movie[id]").value = "ANM";
+  document.getElementById("movie[day]").value = "Wednesday";
+  document.getElementById("movie[hour]").value = "9pm";
+  document.getElementById("bookingFormTitle").value = "Frozen 2";
+  }
+
 }
+
+
 
 function updateTotal() {
   document.getElementById("totalPrice").value = 20;
+}
+
+
+
+function validateName() {
+  var name = document.getElementById("cust[name]").value;
+  var nameRegex = /^[a-zA-Z ]{1, 30}$/;
+  var nameValidation = nameRegex.text(name);
+    if (!nameValidation) {
+      alert("Please enter the correct name!")
+    }
+}
+
+function validateEmail() {
+  var email = document.getElementById("cust[email]").value;
+  var emailRegex = /^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/;
+  var emailValidation = emailRegex.text(email);
+    if (!emailValidation) {
+      alert("Please enter the correct email!")
+    }
 }
 
 function validateCard() {
 var cardNo = document.getElementById("cust[card]").value;
 var cardRegex = /^(?! )^( ?\d){14,19}(?<! )$/;
 var cardValidation = cardRegex.test(cardNo);
-
     if (!cardValidation) {
-        alert("Please enter correct card number");
+        alert("Please enter the correct card number!");
     }
-  }
+}
