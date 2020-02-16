@@ -58,19 +58,19 @@ else{
 
 
         <label>MovieId</label><input type=text name='movieId'/><br>
-        <label>MovieDay</label><input type=text name='movie[day]'/><br>
-        <label>MovieHour</label><input type=text name='movie[hour]'/><br>
+        <label>MovieDay</label><input type=text name='movieDay'/><br>
+        <label>MovieHour</label><input type=text name='movieHour'/><br>
         <br>
         <label>SeatsSTA</label><input type=text name='seatsSTA'/><br>
-        <label>SeatsSTP</label><input type=text name='seats[STP]'/><br>
-        <label>SeatsSTC</label><input type=text name='seats[STC]'/><br>
-        <label>SeatsFCA</label><input type=text name='seats[FCA]'/><br>
-        <label>SeatsFCP</label><input type=text name='seats[FCP]'/><br>
-        <label>SeatsFCC</label><input type=text name='seats[FCC]'/><br>
+        <label>SeatsSTP</label><input type=text name='seatsSTP'/><br>
+        <label>SeatsSTC</label><input type=text name='seatsSTC'/><br>
+        <label>SeatsFCA</label><input type=text name='seatsFCA'/><br>
+        <label>SeatsFCP</label><input type=text name='seatsFCP'/><br>
+        <label>SeatsFCC</label><input type=text name='seatsFCC'/><br>
         <br>
         <label>CustName</label><input type=text name='name'/><br>
         <label>CustEmail</label><input type=text name='email'/><br>
-        <label>CustMobile</label><input type=text name='cust[mobile]'/><br>
+        <label>CustMobile</label><input type=text name='mobile]'/><br>
         <label>CustCard</label><input type=text name='cust[card]'/><br>
         <label>CustExpiry</label><input type=text name='cust[expiry]'/><br>
         <input type=submit value='Book'/>
