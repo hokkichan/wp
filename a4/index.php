@@ -492,8 +492,6 @@ else{
 }
 ?>
 
-
-
   </form>
 </div>
 	</section>
@@ -512,4 +510,4 @@ else{
   </body>
 </html>
 
-<!--last update: 16.2.2020 1623 hrs-->
+<!--last update: 16.2.2020 1821 hrs-->

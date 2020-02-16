@@ -1,29 +1,45 @@
 <?php 
 include 'tools.php';
-//if ( empty( $_SESSION['email'] || $_SESSION['name'] )) //|| $_SESSION['movie'] || $_SESSION['seats'] ) // ... == seats and cust checks
-//{
-//	header('Location: index.php');
-//	exit;
-//}
-$sta =  $_SESSION['seatsSTA']; 
-$stp =  $_SESSION['seatsSTP'];  
-$stc =  $_SESSION['seatsSTC']; 
-$fca =  $_SESSION['seatsFCA']; 
-$fcp =  $_SESSION['seatsFCP'];
-$fcc =  $_SESSION['seatsFCC'];
 
+$sta = $_SESSION['seatsSTA']; 
+$stp = $_SESSION['seatsSTP'];  
+$stc = $_SESSION['seatsSTC']; 
+$fca = $_SESSION['seatsFCA']; 
+$fcp = $_SESSION['seatsFCP'];
+$fcc = $_SESSION['seatsFCC'];
+$day = $_SESSION['movieDay'];
+$hour = $_SESSION['movieHour'];
 
 $total =0;
-$total += $sta*20.5;
-$total += $stp*18;
-$total += $stc*15.5;
-$total += $fca*30;
-$total += $fcp*27.5;
-$total += $fcc*25.0;
+
+if ($day == "Monday"|| $day == "Tuesday") {
+  $total += 15*$sta;
+  $total += 13*$stp;
+  $total += 11*$stc;
+  $total += 25*$fca;
+  $total += 23*$fcp;
+  $total += 21*$fcc;
+  }
+  else if (($day == "Wednesday" || $day == "Thursday" || $day == "Friday") && ($hour == "12pm")) {
+  $total += 15*$sta;
+  $total += 13*$stp;
+  $total += 11*$stc;
+  $total += 25*$fca;
+  $total += 23*$fcp;
+  $total += 21*$fcc;
+  }
+  else {
+  $total += 20.5*$sta;
+  $total += 18*$stp;
+  $total += 15.5*$stc;
+  $total += 30*$fca;
+  $total += 27.5*$fcp;
+  $total += 25*$fcc;
+  }
+
 $tax = $total/11;
 $totalBeforeTax = $total*10/11;
 
-//Note: I have not included the calculations for discount sessions, so the calculations for discout sessions are incorrect. Thanks.
 	;?>
 
 <style>
@@ -135,7 +151,7 @@ tr:nth-child(even) {
 </table>
 <h3>
 	Total: $ <?php echo round($totalBeforeTax, 2)?><br>
-  GST: $ <?php echo round($tax, 2)?><br>
+  GST (10%): $ <?php echo round($tax, 2)?><br>
   Grand Total: $ <?php echo round($total, 2)?><br>
 </h3>
 <h3>

@@ -467,3 +467,81 @@ Hour,
 "FCP Qty",
 "FCC Qty",
 Total,410
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",AHF
+Day,Wednesday
+Hour,12pm
+"STA Qty",1
+"STP Qty",2
+"STC Qty",3
+"FCA Qty",1
+"FCP Qty",2
+"FCC Qty",3
+Total,263
+Name,"Hokki Chan"
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",RMC
+Day,Monday
+Hour,6pm
+"STA Qty",1
+"STP Qty",1
+"STC Qty",1
+"FCA Qty",1
+"FCP Qty",1
+"FCC Qty",1
+Total,136.5
+Name,"Hokki Chan"
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,Monday
+Hour,6pm
+"STA Qty",1
+"STP Qty",1
+"STC Qty",1
+"FCA Qty",1
+"FCP Qty",1
+"FCC Qty",1
+Total,136.5
+Name,"Hokki Chan"
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,Monday
+Hour,6pm
+"STA Qty",1
+"STP Qty",1
+"STC Qty",1
+"FCA Qty",1
+"FCP Qty",1
+"FCC Qty",1
+Total,108
+Name,"Hokki Chan"
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",RMC
+Day,Monday
+Hour,6pm
+"STA Qty",1
+"STP Qty",2
+"STC Qty",3
+"FCA Qty",4
+"FCP Qty",5
+"FCC Qty",6
+Total,415
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",ANM
+Day,Wednesday
+Hour,9pm
+"STA Qty",1
+"STP Qty",2
+"STC Qty",3
+"FCA Qty",4
+"FCP Qty",5
+"FCC Qty",6
+Total,510.5
