@@ -54,7 +54,7 @@ else{
 
     <main>
       <h2>A4 Booking Form</h2>
-      <form method='post' action='index.php'>
+      <form method='post' action='index-fallback.php'>
 
 
         <label>MovieId</label><input type=text name='movieId'/><br>
@@ -70,7 +70,7 @@ else{
         <br>
         <label>CustName</label><input type=text name='name'/><br>
         <label>CustEmail</label><input type=text name='email'/><br>
-        <label>CustMobile</label><input type=text name='mobile]'/><br>
+        <label>CustMobile</label><input type=text name='mobile'/><br>
         <label>CustCard</label><input type=text name='cust[card]'/><br>
         <label>CustExpiry</label><input type=text name='cust[expiry]'/><br>
         <input type=submit value='Book'/>

@@ -1,11 +1,20 @@
 <?php
 session_start();
-$email = "";
 $name = "";
-
+$email = "";
+$mobile = "";
+$movieID = "";
+$movieDay = "";
+$movieHour = "";
+$seatsSTA = "";
+$seatsSTP = "";
+$seatsSTC = "";
+$seatsFCA = "";
+$seatsFCC = "";
+$seatsFCP = "";
 
 if ( isset($_POST['clear-session']) ) 
-  unset ( $_SESSION['email'], $_SESSION['name'], $_SESSION['seatsSTA']);
+  unset ( $_SESSION['name'], $_SESSION['email'], $_SESSION['mobile'], $_SESSION['movieId'], $_SESSION['movieDay'], $_SESSION['movieHour'], $_SESSION['seatsSTA'], $_SESSION['seatsSTP'], $_SESSION['seatsSTC'], $_SESSION['seatsFCA'], $_SESSION['seatsFCP'], $_SESSION['seatsFCC']);
 
 
 
@@ -13,13 +22,12 @@ if ( isset($_POST['clear-session']) )
 
 function sendToSession()
 {
-  $_SESSION['email'] = $_POST['email'];
   $_SESSION['name'] = $_POST['name']; 
+  $_SESSION['email'] = $_POST['email'];
   $_SESSION['mobile'] = $_POST['mobile'];
   $_SESSION['movieId'] = $_POST['movieId'];
   $_SESSION['movieDay'] = $_POST['movieDay'];
   $_SESSION['movieHour'] = $_POST['movieHour'];
-  $_SESSION['name'] = $_POST['name'];
   $_SESSION['seatsSTA'] = $_POST['seatsSTA'];
   $_SESSION['seatsSTP'] = $_POST['seatsSTP'];
   $_SESSION['seatsSTC'] = $_POST['seatsSTC'];

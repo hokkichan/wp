@@ -1,1 +1,339 @@
 Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	"FCP Qty"	"FCC Qty"	Total
+Name,NSY
+Email,nsy@marble.com
+Mobile,
+"Movie ID",ABC
+Day,Mon
+Hour,1
+"STA Qty",1
+"STP Qty",
+"STC Qty",1
+"FCA Qty",
+"FCP Qty",1
+"FCC Qty",
+Total,63.5
+Name,NSY
+Email,nsy@marble.com
+Mobile,
+"Movie ID",ABC
+Day,Mon
+Hour,1
+"STA Qty",1
+"STP Qty",
+"STC Qty",1
+"FCA Qty",
+"FCP Qty",1
+"FCC Qty",
+Total,63.5
+Name,NSY
+Email,nsy@marble.com
+Mobile,
+"Movie ID",ABC
+Day,Mon
+Hour,1
+"STA Qty",1
+"STP Qty",
+"STC Qty",1
+"FCA Qty",
+"FCP Qty",1
+"FCC Qty",
+Total,63.5
+Name,NSY
+Email,nsy@marble.com
+Mobile,
+"Movie ID",ABC
+Day,Mon
+Hour,1
+"STA Qty",1
+"STP Qty",
+"STC Qty",1
+"FCA Qty",
+"FCP Qty",1
+"FCC Qty",
+Total,63.5
+Name,NSY
+Email,nsy@marble.com
+Mobile,
+"Movie ID",ABC
+Day,Mon
+Hour,1
+"STA Qty",1
+"STP Qty",
+"STC Qty",1
+"FCA Qty",
+"FCP Qty",1
+"FCC Qty",
+Total,63.5
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",1
+"STP Qty",
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,20.5
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,0
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,0
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,0
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",1
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,38.5
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",1
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,38.5
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",1
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,18
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",
+"STP Qty",
+"STC Qty",
+"FCA Qty",
+"FCP Qty",
+"FCC Qty",
+Total,0
+Name,test
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",AHF
+Day,Wednesday
+Hour,12pm
+"STA Qty",1
+"STP Qty",2
+"STC Qty",3
+"FCA Qty",4
+"FCP Qty",5
+"FCC Qty",6
+Total,510.5
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",2
+"STP Qty",2
+"STC Qty",0
+"FCA Qty",0
+"FCP Qty",0
+"FCC Qty",0
+Total,77
+Name,!
+Email,1
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",2
+"STP Qty",2
+"STC Qty",0
+"FCA Qty",0
+"FCP Qty",0
+"FCC Qty",0
+Total,77
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",3
+"STP Qty",2
+"STC Qty",1
+"FCA Qty",0
+"FCP Qty",0
+"FCC Qty",0
+Total,113
+Name,
+Email,
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",0
+"STP Qty",0
+"STC Qty",0
+"FCA Qty",0
+"FCP Qty",0
+"FCC Qty",0
+Total,0
+Name,"Hokki Chan"
+Email,hokkichan@gmail.com
+Mobile,
+"Movie ID",
+Day,
+Hour,
+"STA Qty",1
+"STP Qty",2
+"STC Qty",3
+"FCA Qty",4
+"FCP Qty",5
+"FCC Qty",6
+Total,510.5

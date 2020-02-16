@@ -90,17 +90,16 @@ tr:nth-child(even) {
         <td><?php echo $_SESSION['mobile'] ?></td>
     </tr>
 </table>
-<br>
 <table>
     <h2>Booking Details</h2>
     <tr>
         <td> </td>
-        <th scope="col" class="title">Booking Details</th>
-        <th scope="col" class="title">Quantity</th>
+        <th scope="col" class="title">Remarks</th>
+        <th scope="col" class="title">Details/Quantity</th>
     </tr>
      <tr>
-        <th scope="row">Code: </th>
-        <td>ACT = Star Wars: The Rise of Skywalker [M]<br>ANM = Frozen 2<br>RMC = The Aeronauts<br>AHF = Jojo Rabbit</td>
+        <th scope="row">Movie Code: </th>
+        <td>ACT = Star Wars: The Rise of Skywalker [M]<br>ANM = Frozen 2 [PG]<br>RMC = The Aeronauts [PG]<br>AHF = Jojo Rabbit [M]</td>
         <td><?php echo $_SESSION['movieId'] ?></td>
     </tr>
     <tr>

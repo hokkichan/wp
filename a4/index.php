@@ -1,6 +1,12 @@
+<?php //session_start();
+ include 'tools.php';
+$errorsFound = 0;
+
+
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
-<?php include 'tools.php';?>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -281,15 +287,15 @@
   		<h1>Booking Area</h1><br>
   		
       <div class="container">
-  <form id='bookingform' method = "post" action="receipt.php" onsubmit="return validate()">
+  <form id='bookingform' method = "post" action="index.php" onsubmit="return validate()">
 <?php $errorsFound = 0; ?>
 
 
     <div class="columnn">
     <h2>Movie Title - Day - Time</h2>
     <div><input id="bookingFormTitle" name="bookingFormTitle" value="" size="30"></input></div>
-    <input type="hidden" id="movie[id]" name="movie[id]" value=""></input>
-    <div><input id="movie[day]" name="movie[day]" value="" size="12"></input><input id="movie[hour]" name="movie[hour]" value="" size="12"></input></div>
+    <input type="hidden" id="movie[id]" name="movieId" value=""></input>
+    <div><input id="movie[day]" name="movieDay" value="" size="12"></input><input id="movie[hour]" name="movieHour" value="" size="12"></input></div>
     <br>
 
     <h3>Standard</h3>
@@ -308,7 +314,7 @@
     </select></p><br>
 
     <p><label for="seats[STP]">Standard Concession</label>
-    <select id="seats[STP]" name="seats[STP]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[STP]" name="seatsSTP" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -322,7 +328,7 @@
     </select></p><br>
 
     <p><label for="seats[STC]">Standard Child</label>
-    <select id="seats[STC]" name="seats[STC]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[STC]" name="seatsSTC" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -338,7 +344,7 @@
       <div class="columnn">
     <h3>First Class</h3><br>
     <p><label for="seats[FCA]">First Class Adult</label>
-    <select id="seats[FCA]" name="seats[FCA]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[FCA]" name="seatsFCA" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -352,7 +358,7 @@
     </select></p><br>
 
     <p><label for="seats[FCP]">First Class Concession</label>
-    <select id="seats[FCP]" name="seats[FCP]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[FCP]" name="seatsFCP" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -366,7 +372,7 @@
     </select></p><br>
 
     <p><label for="seats[FCC]">First Class Child</label>
-    <select id="seats[FCC]" name="seats[FCC]" style="height:30px" onchange="updateTotal()">
+    <select id="seats[FCC]" name="seatsFCC" style="height:30px" onchange="updateTotal()">
       <option value="0">Please select</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -384,44 +390,58 @@
     <input type="text" id="cust[name]" name="name" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input></p><br>
 
     <p><label for="subject">Email</label>
-    <input type="email" id="cust[email]" name="email" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
+    <input type="text" id="cust[email]" name="email" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
 
     <p><label for="subject">Mobile</label>
-    <input type="tel" id="cust[mobile]" name="cust[mobile]" placeholder="+04 1234567890" onchange="validateMobile()" style="height:30px" size="12"></input></p><br>
+    <input type="tel" id="cust[mobile]" name="mobile" placeholder="+04 1234567890" onchange="validateMobile()" style="height:30px" size="12"></input></p><br>
 
     <p><label for="subject">Credit Card</label>
-    <input type="text" id="cust[card]" name="cust[card]" placeholder="1234 5678 9012 3456 789" onchange="validateCard()" style="height:30px" size="23"></input></p><br>
+    <input type="text" id="cust[card]" name="custCard" placeholder="1234 5678 9012 3456 789" onchange="validateCard()" style="height:30px" size="23"></input></p><br>
 
     <p><label for="subject">Expiry</label>
-    <input type="month" id="cust[expiry]" name="cust[expiry]" style="height:30px"></input></p><br>
+    <input type="month" id="cust[expiry]" name="custExpiry" style="height:30px"></input></p><br>
 
   <div><label>Total: $</label><input type="number" id="totalPrice" name="totalPrice" value="0"></div>
   <div><input type="submit" value="Order"></div>
+  <div><input type="submit" value="Clear Session" name="clear-session"><br></div>
 
   <?php 
 
-if(!empty($_POST)) {
-  if (empty ($_POST['name'])) {
-  $errorsFound++; }
-  if (empty ($_POST['email'])){
-  $errorsFound++;}
-  else {
-    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $errorsFound++;}
-   }
-  } 
-  ?>
+if(!empty($_POST)) 
+{
+if (empty ($_POST['name']))
+ {
+  $errorsFound++;
+ }
+ if (empty ($_POST['email']))
+ {
+  $errorsFound++;
+ }
+ else 
+ {
+ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
+ {
+  $errorsFound++;
+ }
+}
+} 
 
-  <?php
-if ($errorsFound >0) {
+
+  if ($errorsFound >0) {
 echo 'Number of errors found: ' . $errorsFound . '<br>';
 }
 else{
-  if (!empty($_POST)) {
+  if (!empty($_POST))
+  {
     sendToSession();
-    }
+    //printPost();
+    //For debugging use
+    header("Location: receipt.php");
   }
+}
 ?>
+
+
 
   </form>
 </div>
@@ -441,4 +461,4 @@ else{
   </body>
 </html>
 
-<!--last update: 21.1.2020 2212 hrs-->
+<!--last update: 16.2.2020 1623 hrs-->
