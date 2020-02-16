@@ -432,6 +432,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <span id="error"><br><?php echo $seatsErr;?></span>
   <div><input type="submit" value="Order"></div>
   <div><input type="submit" value="Clear Session" name="clear-session"><br></div>
+  <a href="receipt.php"><button type="button">View Receipt After Order</button></a>
 
 
   <?php 
