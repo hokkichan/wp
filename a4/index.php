@@ -310,9 +310,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   		<h1>Booking Area</h1><br>
   		
       <div class="container">
-  <form id='bookingform' method = "post" action="receipt.php" onsubmit="return validate()">
+  <form id='bookingform' method = "post" action="index.php" onsubmit="return validate()">
     <!-- Note: The post method to "index.php" works on my MAMP.  However, when posted to Titan server, the below warning message is shown: Warning: Cannot modify header information - headers already sent by (output started at /home/sl1/S3831921/public_html/wp/a4/index.php:429) in /home/sl1/S3831921/public_html/wp/a4/index.php on line 491
-    Nevertheless, the "receipt.php" is working properly.  I can force the browser to ignore checking and direct to action="receipt.php".  The problem could not be solved in spite of using ob_start(); and ob_end_flush();
+    Nevertheless, the "receipt.php" is working properly.  The data can be posted to "receipt.php".  The problem could not be solved in spite of using ob_start(); and ob_end_flush();.  I knew that the discussion forum has covered issues in this respect that html code is generated before php code, but regrettably this cannot be resolved before my eubmission deadline for a weekend extension.
     -->
 
 
