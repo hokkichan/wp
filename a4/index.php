@@ -1,7 +1,30 @@
-<?php //session_start();
+<?php 
  include 'tools.php';
 $errorsFound = 0;
 
+?>
+
+<?php
+$name = "";
+$nameErr= "";
+$seatsErr= "";
+//code adopted from https://tryphp.w3schools.com/showphp.php?filename=demo_form_validation_special
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Error! Name is required.";
+  } else {
+    $name = test_input($_POST["name"]);
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Error! Only letters and white space allowed.";
+    }
+  }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ($_POST["seatsSTA"]>9 || $_POST["seatsSTP"]>9 || $_POST["seatsSTC"]>9 || $_POST["seatsFCA"]>9 || $_POST["seatsFCP"]>9 || $_POST["seatsFCC"]>9) {
+    $seatsErr = "Error! Max ticket order is 9 per type.";
+  } 
+}
 
 ?>
 
@@ -387,7 +410,7 @@ $errorsFound = 0;
   </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
-    <input type="text" id="cust[name]" name="name" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input></p><br>
+    <input type="text" id="cust[name]" name="name" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input><span id="error"><br><?php echo $nameErr;?></span></p>
 
     <p><label for="subject">Email</label>
     <input type="text" id="cust[email]" name="email" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
@@ -400,15 +423,43 @@ $errorsFound = 0;
 
     <p><label for="subject">Expiry</label>
     <input type="month" id="cust[expiry]" name="custExpiry" style="height:30px"></input></p><br>
-
-  <div><label>Total: $</label><input type="number" id="totalPrice" name="totalPrice" value="0"></div>
+  
+  <div><label>Total: $</label><input type="number" step="any" id="totalPrice" name="totalPrice" value="0"></div>
+  <span id="error"><br><?php echo $seatsErr;?><br></span>
   <div><input type="submit" value="Order"></div>
   <div><input type="submit" value="Clear Session" name="clear-session"><br></div>
 
+
   <?php 
+
+
 
 if(!empty($_POST)) 
 {
+if (($_POST['seatsSTA'])>10)
+ {
+  $errorsFound++;
+ }
+ if (($_POST['seatsSTP'])>10)
+ {
+  $errorsFound++;
+ } 
+ if (($_POST['seatsSTC'])>10)
+ {
+  $errorsFound++;
+ }
+ if (($_POST['seatsFCA'])>10)
+ {
+  $errorsFound++;
+ } 
+ if (($_POST['seatsFCP'])>10)
+ {
+  $errorsFound++;
+ } 
+ if (($_POST['seatsFCC'])>10)
+ {
+  $errorsFound++;
+ }   
 if (empty ($_POST['name']))
  {
   $errorsFound++;

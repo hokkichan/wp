@@ -21,6 +21,12 @@ if (empty ($_POST['name']))
 }
 } 
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (($_POST["seatsSTA"])>9) {
+    $seatsErr = "Error! Max ticket order is 9 per type.";
+  } 
+}
+
 if ($errorsFound >0) {
 echo 'Number of errors found: ' . $errorsFound . '<br>';
 }
