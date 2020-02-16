@@ -310,8 +310,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   		<h1>Booking Area</h1><br>
   		
       <div class="container">
-  <form id='bookingform' method = "post" action="index.php" onsubmit="return validate()">
-<?php $errorsFound = 0; ?>
+  <form id='bookingform' method = "post" action="receipt.php" onsubmit="return validate()">
+    <!-- Note: The post method to "index.php" works on my MAMP.  However, when posted to Titan server, the below warning message is shown: Warning: Cannot modify header information - headers already sent by (output started at /home/sl1/S3831921/public_html/wp/a4/index.php:429) in /home/sl1/S3831921/public_html/wp/a4/index.php on line 491
+    Nevertheless, the "receipt.php" is working properly.  I can force the browser to ignore checking and direct to action="receipt.php".  The problem could not be solved in spite of using ob_start(); and ob_end_flush();
+    -->
+
 
 
     <div class="columnn">
@@ -410,7 +413,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </div>
 <div class="columnn">
     <p><label for="subject">Name</label>
-    <input type="text" id="cust[name]" name="name" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input><span id="error"><br><?php echo $nameErr;?></span></p>
+    <input type="text" id="cust[name]" name="name" placeholder="Hokki Chan" onchange="validateName()" style="height:30px" size="30"></input></p>
 
     <p><label for="subject">Email</label>
     <input type="text" id="cust[email]" name="email" placeholder="s3831921@student.rmit.edu.au" style="height:30px" size="30"></input></p><br>
@@ -425,14 +428,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="month" id="cust[expiry]" name="custExpiry" style="height:30px"></input></p><br>
   
   <div><label>Total: $</label><input type="number" step="any" id="totalPrice" name="totalPrice" value="0"></div>
-  <span id="error"><br><?php echo $seatsErr;?><br></span>
+  <span id="error"><br><?php echo $nameErr;?></span>
+  <span id="error"><br><?php echo $seatsErr;?></span>
   <div><input type="submit" value="Order"></div>
   <div><input type="submit" value="Clear Session" name="clear-session"><br></div>
 
 
   <?php 
-
-
+  $errorsFound = 0; 
 
 if(!empty($_POST)) 
 {
@@ -477,7 +480,6 @@ if (empty ($_POST['name']))
 }
 } 
 
-
   if ($errorsFound >0) {
 echo 'Number of errors found: ' . $errorsFound . '<br>';
 }
@@ -487,7 +489,9 @@ else{
     sendToSession();
     //printPost();
     //For debugging use
+    ob_start();
     header("Location: receipt.php");
+    ob_end_flush();
   }
 }
 ?>
