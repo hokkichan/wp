@@ -43,18 +43,26 @@ $totalBeforeTax = $total*10/11;
 	;?>
 
 <style>
-p {
-	font-weight: bold;
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
 }
 
 h2 {
   color: blue;
   font-weight: bold;
+  width: 80%;
 }
+
 
 table {
   border-collapse: collapse;
-  width: 70%;
+  width: 80%;
   margin-bottom: 25px;
 }
 
@@ -87,6 +95,8 @@ tr:nth-child(even) {
   Address: La Trobe St, Melbourne <br>
 </h3>
 
+<h1>Receipt</h1>
+
 <table>
     <h2>Customer Details</h2>
     <tr>
@@ -117,6 +127,16 @@ tr:nth-child(even) {
         <th scope="row">Movie Code: </th>
         <td>ACT = Star Wars: The Rise of Skywalker [M]<br>ANM = Frozen 2 [PG]<br>RMC = The Aeronauts [PG]<br>AHF = Jojo Rabbit [M]</td>
         <td><?php echo $_SESSION['movieId'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Movie Day</th>
+        <td></td>
+        <td><?php echo $_SESSION['movieDay'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Movie Hour</th>
+        <td></td>
+        <td><?php echo $_SESSION['movieHour'] ?></td>
     </tr>
     <tr>
         <th scope="row">Standard Adult (STA)</th>
@@ -157,6 +177,67 @@ tr:nth-child(even) {
 <h3>
 Thank you for your order!
 </h3>
+
+<span>============================Tear off for ticket(s) below============================</span>
+
+<table>
+    <h1>Ticket(s)</h1>
+    <tr>
+        <td> </td>
+        <th scope="col" class="title">Remarks</th>
+        <th scope="col" class="title">Details/Quantity</th>
+    </tr>
+    <tr>
+        <th scope="row">Customer Name</th>
+        <td></td>
+        <td><?php echo $_SESSION['name'] ?></td>
+    </tr>
+     <tr>
+        <th scope="row">Movie Code: </th>
+        <td>ACT = Star Wars: The Rise of Skywalker [M]<br>ANM = Frozen 2 [PG]<br>RMC = The Aeronauts [PG]<br>AHF = Jojo Rabbit [M]</td>
+        <td><?php echo $_SESSION['movieId'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Movie Day</th>
+        <td></td>
+        <td><?php echo $_SESSION['movieDay'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Movie Hour</th>
+        <td></td>
+        <td><?php echo $_SESSION['movieHour'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Standard Adult (STA)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsSTA'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">Standard Concession (STP)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsSTP'] ?></td>
+    </tr>
+   <tr>
+        <th scope="row">Standard Child (STC)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsSTC'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">First Class Adult (FCA)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsFCA'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">First Class Concession (FCP)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsFCP'] ?></td>
+    </tr>
+    <tr>
+        <th scope="row">First Class Child (FCC)</th>
+        <td></td>
+        <td><?php echo $_SESSION['seatsFCC'] ?></td>
+    </tr>
+</table>
 
 
 
