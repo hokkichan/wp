@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+$email = "";
+$name = "";
 
 
 if ( isset($_POST['clear-session']) ) 
@@ -15,12 +16,13 @@ function sendToSession()
   $_SESSION['email'] = $_POST['email'];
   $_SESSION['name'] = $_POST['name']; 
   $_SESSION['seatsSTA'] = $_POST['seatsSTA'];
-  echo 'Thank you for order, your input: ' . $_SESSION['name']. $_SESSION['email']. $_SESSION['seatsSTA'];
 }
 
 function printPost() {
 	echo 'Name: ' . $_POST['name'] . '<br>';
 	echo 'Email: ' . $_POST['email'] . '<br>';
+	echo 'SeatsSTA: ' . $_POST['seatsSTA'] . '<br>';
+	echo 'Show inputted data dor debugging';
 }
 
 

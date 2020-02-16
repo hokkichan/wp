@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang='en'>
-<?php include 'tools.php';?>
-  <head>
-    <meta charset='utf-8'>
-    <title>A4 Backup Page</title>
-    <style>label { display: inline-block; width:90px; }</style>
-  </head>
-
-  <body>
-    
-    <header>
-      <h1>🌕 Lunardo Cinema</h1>
-    </header>
-
-    <nav>
-    </nav>
-
-    <main>
-      <h2>A4 Booking Form</h2>
-      <form method='post' action='receipt.php'>
-<?php $errorsFound = 0; ?>
-        <?php 
+<?php //session_start();
+ include 'tools.php';
+$errorsFound = 0;
 
 if(!empty($_POST)) 
 {
@@ -41,9 +21,6 @@ if (empty ($_POST['name']))
 }
 } 
 
-?>
-
-<?php
 if ($errorsFound >0) {
 echo 'Number of errors found: ' . $errorsFound . '<br>';
 }
@@ -51,9 +28,34 @@ else{
   if (!empty($_POST))
   {
     sendToSession();
+    printPost();
+    header("Location: receipt.php");
   }
 }
-?>
+
+ ?>
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>A4 Backup Page</title>
+    <style>label { display: inline-block; width:90px; }</style>
+  </head>
+
+  <body>
+    
+    <header>
+      <h1>🌕 Lunardo Cinema</h1>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+      <h2>A4 Booking Form</h2>
+      <form method='post' action='index.php'>
+
 
         <label>MovieId</label><input type=text name='movieId'/><br>
         <label>MovieDay</label><input type=text name='movie[day]'/><br>

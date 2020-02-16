@@ -1,10 +1,10 @@
 <?php 
 include 'tools.php';
-if ( empty( $_SESSION['email'] || $_SESSION['name'] )) //|| $_SESSION['movie'] || $_SESSION['seats'] ) // ... == seats and cust checks
-{
-	header('Location: index.php');
-	exit;
-}
+//if ( empty( $_SESSION['email'] || $_SESSION['name'] )) //|| $_SESSION['movie'] || $_SESSION['seats'] ) // ... == seats and cust checks
+//{
+//	header('Location: index.php');
+//	exit;
+//}
   
 	;?>
 
@@ -112,18 +112,19 @@ Thank you for order!
 
 
 <?php
+$var =  $_SESSION['name'];
 $list = array (
-  array("Peter", "Griffin" ,"Oslo", "Norway"),
-  array("Glenn", "Quagmire", "Oslo", "Norway"),
-  //$_SESSION['email']
+  array("$var"),
+  array("Glenn", "Quagmire", "Oslo", "Norway")
 );
 
+
 $file = fopen("ordernew.txt","a");
-flock($file, LOCK_SH);
+//flock($file, LOCK_SH);
 foreach ($list as $line) {
   fputcsv($file, $line);
 }
-flock($file, LOCK_UN);
+//flock($file, LOCK_UN);
 fclose($file);
 ?>
 
